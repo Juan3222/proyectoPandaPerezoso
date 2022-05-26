@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Yanone+Kaffeesatz&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 8rem;
+    background-color: #ffe4c4f3;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid gray;
+    
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+#logo{
+    width: 10rem;
+    height: 8rem;
+    
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+#barraBusqueda{
+    width: 35rem;
+    height: 3rem;
+    background-color: white;
+    font-size: 1.5rem;
+    border: 1px solid gray;
+}
+
+.barraNavegacion{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 3rem;
+    margin-right: 1rem;
+    
+}
+
+.barraNavegacion li{
+    border-bottom: 2px solid black;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    
+}
+
+
+/* MAIN */
+
+main{
+    background-image: url(../img/ep_naturalwhite.png);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+
+h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.fotosLibreria {  
+    display: flex;
+    width: 100%; 
+}
+
+.fotosLibreria img{
+    width: 100%;
+    height: 100%;
+}
+
+.catalogo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.catalogoUl{
+    display: flex;
+    font-size: 2.5rem;
+    gap: 8rem;
+}
+
+.catalogoTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    gap: 1rem;
+    width: max-content;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.catalogoInicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 2.5rem;
+}
+
+.catalogoInicio img{
+    width: 40rem;
+    height: 60rem;
+    border-radius: 20px;
+    box-shadow:  7px 7px 2px #999999;
+            
+}
+
+.catalogoInicioLibros{
+    display: flex;
+    flex-direction: column;
+    
+}
+.catalogoLibros{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    width: 120rem;
+    height: 70rem;
+    background-color: rgba(255, 255, 255, 0.699);
+    border: 3px solid rgb(75, 75, 75);
+}
+
+.catalogoDescripcionLibros{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-radius: 10px;
+    min-width: max-content;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:  7px 7px 2px #999999;
+                
+}
+
+.recomendaciones{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    font-size: 2.5rem;
+    
+}
+
+.recomendacionesDescripcion{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-radius: 10px;
+    min-width: max-content;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:  7px 7px 2px #999999;
+}
+.recomendacionesResumen{
+    font-size: 2rem;
+    margin-top: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:  7px 7px 2px #999999;
+}
+
+.oferta{
+    font-weight: bold;
+}
+
+    
+/* FOOTER */
+
+
+.pie{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4c4;
+    padding: 1rem 0;
+    border: 1px solid gray;
+}
+
+.pie img{
+    width: 32px;
+    
+}
+
+.pieRedes{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pieDescripcion{
+    display: flex;
+    width: 30rem;
+    
+}
+.pieUbicacion{
+    display: flex;
+    flex-direction: column;
+}
+
+#pieUbicacionImg{
+    display: flex;
+}
+
+.pieSubtitulo{
+    font-size: 2rem;
+}
+
+#ubicacion{
+    width: 18px;
+}
+
+
+
