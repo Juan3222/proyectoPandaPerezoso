@@ -9,48 +9,50 @@
 </head>
 <body>
     
-<header>
-        <div class="containerHeader containerHeaderLH1">
-            <h1>Librería PandaPerezoso</h1>
-            <img src="img/pandaLogo.png" alt="Logo panda" id="logo">
+
+    <header>
+        <div class="containerHeaderLN">
+            <div class="containerHeader containerHeaderLH1">
+                <h1>Librería PandaPerezoso</h1>
+                <img src="img/pandaLogo.png" alt="Logo panda" id="logo">
+            </div>
+            <nav class="containerHeader">
+                <ul class="barraNavegacion">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./secciones/libros.html">Libros</a>
+                    </li> 
+                    <li>
+                        <a href="./secciones/comics.html">Comics</a>
+                    </li>
+                    <li>
+                        <a href="./secciones/trending.html">Trending</a>
+                    </li>
+                    <li>
+                        <a href="./secciones/novedades.html">Novedades</a>
+                    <li>
+                        <a href="./secciones/contacto.html">Contacto</a>
+                    </li>    
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <form action="">
+        <form action="" class="containerBarra">
             <input class="containerHeader" id="barraBusqueda" type="search" placeholder="Escriba para buscar..." >
         </form>
-        <nav>
-            <ul class="containerHeader barraNavegacion">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./secciones/libros.html">Libros</a>
-                </li> 
-                <li>
-                    <a href="./secciones/comics.html">Comics</a>
-                </li>
-                <li>
-                    <a href="./secciones/trending.html">Trending</a>
-                </li>
-                <li>
-                    <a href="./secciones/novedades.html">Novedades</a>
-                <li>
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>    
-                </li>
-            </ul>
-        </nav>
-        
-</header>
+    </header>
 
 <main> 
-
+    <!-- Subitulo -->
     <section class="catalogo">
         <div class="catalogoTitulo">
             <h2>Novedades Populares Libros</h2> 
             <img src="./img/libroIco.png" alt="">
         </div>
     </section>
-
+<!-- Galeria -->
     <section class="catalogoInicio">
         <div class="catalogoInicioLibros">
             <figure>
@@ -89,14 +91,14 @@
             </div> 
         </div>
     </section>
-
+<!-- Subitulo -->
     <section class="catalogo">
         <div class="catalogoTitulo">
             <h2>Novedades Populares Comics</h2> 
             <img src="./img/comicIco.png" alt="">
         </div>
     </section>
-
+<!-- Galeria -->
     <section  class="catalogoInicio">
         <div class="catalogoInicioLibros">
             <figure>
@@ -136,15 +138,15 @@
         </div>
     </section >    
 
-
+<!-- Subitulo -->
     <section class="catalogo">
         <div class="catalogoTitulo">
             <h2>Géneros Populares</h2> 
             <img src="./img/generosIco.png" alt="">
         </div>
     </section>
-
-    <section  class="catalogo">
+<!-- subtituloGeneros -->
+    <section class="catalogo">
         <div class="catalogoUl">
             <ul>
                 <li>
@@ -169,14 +171,14 @@
             </ul> 
         </div>
     </section >
-
+<!-- Subitulo -->
     <section class="catalogo">
         <div class="catalogoTitulo">
             <h2>Recomendaciones Nuestras</h2> 
             <img src="./img/recomendacionesIco.png" alt="">
         </div>
     </section>
-
+<!-- GaleriaRecomendacion -->
     <section  class="catalogoInicio">
         <div class="recomendaciones">
             <figure>
@@ -239,7 +241,10 @@
                 <a href="./secciones/contacto.html">Av.Italia 322. Esq Minnesota-Montevideo</a>
             </div>
         </div>   
-        <div class="pieDescripcion"> 
+        <div class="pieDescripcion">
+            <div class="pieSubtitulo">
+                <h3>¿Quiénes somos?</h3>
+            </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis assumenda tempora quis saepe natus sequi eos hic neque aut nihil ipsam, dolores molestiae velit accusantium alias! Unde voluptatem pariatur ratione?</p>
         </div>     
     </footer>
