@@ -51,6 +51,7 @@ header{
 .containerBarra{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -75,6 +76,11 @@ header{
 #barraBusqueda{
     height: 4rem;
     width: 95%;
+}
+#botonBusqueda{
+    height: 4rem;
+    width: 6rem;
+    margin-right: 10px;
 }
 
 header a{
@@ -125,6 +131,7 @@ header a{
         height: 4rem;
         width: 50%;
     }
+    
 }
 
 /* HEADER 1024PX */
@@ -408,5 +415,5 @@ footer{
     100%{
         transform: scale(1.4) translateY(10px);
     }
-    
+    /* No sé cómo hacer que no se reinicie la animación, quiero mantener la transformación mientras mantenga el cursor arriba*/
 }
