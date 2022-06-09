@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Yanone+Kaffeesatz&display=swap');
-
+@import "generales";
 *{
     margin: 0;
     padding: 0;
@@ -39,11 +39,11 @@ header{
     margin: 1rem;
 }
 
-.containerHeaderLH1{
+.containerHeaderLH1, h1{
     display: flex;
     align-items: center;
-    font-size:2rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-weight: 900;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -76,11 +76,13 @@ header{
 #barraBusqueda{
     height: 4rem;
     width: 95%;
+    font-size: 2rem;
 }
-#botonBusqueda{
+.btn{
     height: 4rem;
-    width: 6rem;
+    width: 9rem;
     margin-right: 10px;
+    font-size: 2rem;
 }
 
 header a{
@@ -155,7 +157,7 @@ header a{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        font-size:2rem;
+        font-size:3rem;
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
         
@@ -183,7 +185,15 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 
+.librosCarousel{
+    display: flex;
+    justify-content: center;
+}
 
+.carousel{
+    width: 25%;
+    margin: 10px 0;
+}
 .catalogo{
     display: flex;
     justify-content: center;
