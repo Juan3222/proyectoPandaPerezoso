@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: header;
+    background-color: #ffe4c4f3;
+    border-bottom: 1px solid gray;
+    width: 100%;
+
+    .containerHeaderLN{
+        display: flex;
+        flex-direction: column;
+
+        .containerHeaderLH1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+
+            .containerCA{
+                display: flex;
+                margin-left: 5rem;
+                gap: 2rem;
+            }
+            .containerCA img{
+                width: 6rem;
+            }
+            h1{
+                font-size: 5rem;
+                font-weight: 900;
+                font-family: 'Poppins', sans-serif;
+            }
+            #logo{
+                width: 18rem;
+                height: 14rem;
+                
+            }
+        }
+        .containerHeader{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1rem;
+
+            .barraNavegacion{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;
+                font-size: 2.5rem;
+                flex-wrap: wrap;
+
+                li{
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+    .containerBarra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+
+        .barraBusqueda{
+            width: 50%;
+            height: 4rem;
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        .btn{
+            height: 4rem;
+            width: 9rem;
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        text-decoration: none;
+    
+    }
+    
+}

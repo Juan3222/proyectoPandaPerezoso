@@ -1,0 +1,78 @@
+//HEADER 768PX 
+@media (min-width: 768px){
+    
+    header{
+        .containerBusqueda{
+            width: 50%;
+        }
+        .catalogoInicio img{
+            width: 42rem;
+            height: 62rem;
+            
+        }
+    
+    }
+    
+}
+
+
+// MAIN 768PX 
+@media (min-width: 768px){
+    
+    main{
+        .catalogoInicio{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .catalogoInicio img{
+            width: 36rem;
+            height: 56rem;
+            
+        }
+        .catalogoDescripcionLibros{
+            
+            font-size: 2.5rem;;            
+        }
+    }
+    
+}
+//FOOTER 768PX 
+@media (min-width: 768px){
+
+    
+    .pie{
+        flex-direction: row;
+        
+        
+
+        .pieSubtitulo h3{
+            font-size: 3rem;
+        }
+        .pieImg{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .pieImg img{
+            
+            width: 3rem;
+        }
+        .pieUbicacion{
+            text-align: center;
+        }
+        .pieUbicacion a{
+            font-size: 1.5rem;
+        }
+        .pieUbicacion img{
+            width: 1.8rem;
+        }
+    }
+}
+
+//HEADER 1024PX
+@media (min-width: 1024px){}
+
+
+
+
