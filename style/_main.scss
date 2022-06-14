@@ -114,3 +114,47 @@ h2{
 .oferta{
     font-weight: bold;
 }
+.gridLibros{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    grid-template-areas: 
+    "l1 l2 l3 l4"
+    "l5 l6 l7 l7"; 
+    
+
+}
+.l1{
+    grid-area: l1;
+}
+.l2{
+    grid-area: l2;
+}
+.l3{
+    grid-area: l3;
+}
+.l4{
+    grid-area: l4;
+}
+.l5{
+    grid-area: l5;
+}
+.l6{
+    grid-area: l6;
+}
+.l7{
+    grid-area: l7;
+    
+    img{
+        height: 100%;
+    }
+    
+}
+
+.gridLibrosImg{
+    width: 100%;
+    border-radius: 5px;
+}
