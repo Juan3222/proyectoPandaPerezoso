@@ -60,6 +60,8 @@ header .containerHeaderLN .containerHeaderLH1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 1rem;
 }
 
@@ -327,14 +329,14 @@ h2 {
 .gridLibros {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   margin: 1rem auto;
   width: 80%;
-      grid-template-areas: "l1 l2 l3 l4" "l5 l6 l7 l7";
+      grid-template-areas: "l1 l2  l3 l4 l7 l7 l5 l6";
 }
 
 .l1 {
@@ -362,20 +364,20 @@ h2 {
 }
 
 .l5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
   grid-area: l5;
 }
 
 .l6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
   grid-area: l6;
 }
 
 .l7 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: l7;
 }
@@ -548,6 +550,18 @@ footer {
   }
   main .catalogoDescripcionLibros {
     font-size: 2.5rem;
+  }
+  main .gridLibros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+        grid-template-areas: "l1 l2 l3 l4" "l5 l6 l7 l7";
   }
 }
 
