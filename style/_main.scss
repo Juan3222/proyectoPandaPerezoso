@@ -122,7 +122,7 @@ h2{
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    gap: 1rem;
+    gap: 2rem;
     margin: 1rem auto;
     width: 75%;
     grid-template-areas: 
@@ -166,19 +166,38 @@ h2{
 }
 .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    
+
+    &:hover{
+        .precioHover{
+            transform: translateY(-7.5rem);
+            opacity: 1;
+            background: linear-gradient(0deg, rgba(255,255,255,0.9472163865546218) 45%, rgba(191,191,191,0.4598214285714286) 100%);
+        
+        }
+        .gridLibrosImg{
+            transform: translateY(-1rem);
+               
+        }
+    }
 }
 
 .gridLibrosImg{
     width: 100%;
     border-radius: 5px;
+    transition: 0.3s;
 }
+.gridLibrosImg img{
+    
+}
+
 .comboGrid{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     background-color: antiquewhite;
     width: 48rem;
 }
@@ -193,10 +212,14 @@ h2{
 .precioHoverDiv{
     display: flex;
     justify-content: center;
+    transition: 0.3s;
+    width: 100%;
 }
 
 .precioHover{
     position: absolute;
     font-size: 5rem;
+    transition: 0.3s;
     opacity: 0;
+    min-width: max-content;
 }

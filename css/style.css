@@ -75,6 +75,8 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA {
 
 header .containerHeaderLN .containerHeaderLH1 .containerCA img {
   width: 6rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header .containerHeaderLN .containerHeaderLH1 h1 {
@@ -122,6 +124,8 @@ header .containerHeaderLN .containerHeader .barraNavegacion {
 
 header .containerHeaderLN .containerHeader .barraNavegacion li {
   border-bottom: 2px solid black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header .containerBarra {
@@ -346,7 +350,7 @@ h2 {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem auto;
   width: 75%;
       grid-template-areas: "l1" "l2" "l3" "l4" "l5" "l6" "l7" "l8" "l9";
@@ -410,18 +414,33 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+.l1:hover .precioHover, .l2:hover .precioHover, .l3:hover .precioHover, .l4:hover .precioHover, .l5:hover .precioHover, .l6:hover .precioHover, .l7:hover .precioHover, .l8:hover .precioHover, .l9:hover .precioHover {
+  -webkit-transform: translateY(-7.5rem);
+          transform: translateY(-7.5rem);
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, rgba(255, 255, 255, 0.947216)), to(rgba(191, 191, 191, 0.459821)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.947216) 45%, rgba(191, 191, 191, 0.459821) 100%);
+}
+
+.l1:hover .gridLibrosImg, .l2:hover .gridLibrosImg, .l3:hover .gridLibrosImg, .l4:hover .gridLibrosImg, .l5:hover .gridLibrosImg, .l6:hover .gridLibrosImg, .l7:hover .gridLibrosImg, .l8:hover .gridLibrosImg, .l9:hover .gridLibrosImg {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
 .gridLibrosImg {
   width: 100%;
   border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .comboGrid {
@@ -434,7 +453,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   background-color: antiquewhite;
   width: 48rem;
 }
@@ -455,12 +474,20 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
 }
 
 .precioHover {
   position: absolute;
   font-size: 5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 footer {
@@ -585,24 +612,11 @@ footer {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: #6161611e;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .containerCA img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.gridLibros p:hover {
-  -webkit-transform: translateY(-8rem);
-          transform: translateY(-8rem);
-  opacity: 1;
-  background-color: rgba(240, 248, 255, 0.719);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 @media (min-width: 768px) {
