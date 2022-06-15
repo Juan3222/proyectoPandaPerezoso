@@ -423,9 +423,13 @@ h2 {
           flex-direction: column;
 }
 
+.l1 figure, .l2 figure, .l3 figure, .l4 figure, .l5 figure, .l6 figure, .l7 figure, .l8 figure, .l9 figure {
+  width: 100%;
+}
+
 .l1:hover .precioHover, .l2:hover .precioHover, .l3:hover .precioHover, .l4:hover .precioHover, .l5:hover .precioHover, .l6:hover .precioHover, .l7:hover .precioHover, .l8:hover .precioHover, .l9:hover .precioHover {
-  -webkit-transform: translateY(-7.5rem);
-          transform: translateY(-7.5rem);
+  -webkit-transform: translateY(-9.5rem);
+          transform: translateY(-9.5rem);
   opacity: 1;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, rgba(255, 255, 255, 0.947216)), to(rgba(191, 191, 191, 0.459821)));
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.947216) 45%, rgba(191, 191, 191, 0.459821) 100%);
@@ -438,6 +442,7 @@ h2 {
 
 .gridLibrosImg {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
