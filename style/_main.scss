@@ -2,6 +2,10 @@ main{
     grid-area: main;
     background-image: url(../img/ep_naturalwhite.png);
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .catalogo{
@@ -116,16 +120,22 @@ h2{
 }
 .gridLibros{
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 1rem;
     margin: 1rem auto;
-    width: 80%;
+    width: 75%;
     grid-template-areas: 
-    "l1 l2 
-     l3 l4
-     l7 l7
-     l5 l6"; 
+    "l1"
+    "l2"
+    "l3"
+    "l4"
+    "l5"
+    "l6"
+    "l7"
+    "l8"
+    "l9"; 
+      
 }
 .l1{
     grid-area: l1;
@@ -146,15 +156,47 @@ h2{
     grid-area: l6;
 }
 .l7{
-    grid-area: l7;
-    
-    img{
-        height: 100%;
-    }
-    
+    grid-area: l7;  
+}
+.l8{
+    grid-area: l8;
+}
+.l9{
+    grid-area: l9;
+}
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .gridLibrosImg{
     width: 100%;
     border-radius: 5px;
+}
+.comboGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: antiquewhite;
+    width: 48rem;
+}
+.comboGridTexto{
+    font-size: 3rem;
+}
+
+.comboOrdenar{
+    font-size: 1.5rem;
+    height: 60%;
+}
+.precioHoverDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.precioHover{
+    position: absolute;
+    font-size: 5rem;
+    opacity: 0;
 }

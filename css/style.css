@@ -164,6 +164,19 @@ main {
   grid-area: main;
   background-image: url(../img/ep_naturalwhite.png);
   font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .catalogo {
@@ -329,14 +342,14 @@ h2 {
 .gridLibros {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
   margin: 1rem auto;
-  width: 80%;
-      grid-template-areas: "l1 l2  l3 l4 l7 l7 l5 l6";
+  width: 75%;
+      grid-template-areas: "l1" "l2" "l3" "l4" "l5" "l6" "l7" "l8" "l9";
 }
 
 .l1 {
@@ -346,49 +359,108 @@ h2 {
 }
 
 .l2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: l2;
 }
 
 .l3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: l3;
 }
 
 .l4 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: l4;
 }
 
 .l5 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: l5;
 }
 
 .l6 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 8;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
   grid-area: l6;
 }
 
 .l7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   grid-area: l7;
 }
 
-.l7 img {
-  height: 100%;
+.l8 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: l8;
+}
+
+.l9 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: l9;
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gridLibrosImg {
   width: 100%;
   border-radius: 5px;
+}
+
+.comboGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  background-color: antiquewhite;
+  width: 48rem;
+}
+
+.comboGridTexto {
+  font-size: 3rem;
+}
+
+.comboOrdenar {
+  font-size: 1.5rem;
+  height: 60%;
+}
+
+.precioHoverDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.precioHover {
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0;
 }
 
 footer {
@@ -524,6 +596,15 @@ footer {
   transition: 0.2s;
 }
 
+.gridLibros p:hover {
+  -webkit-transform: translateY(-8rem);
+          transform: translateY(-8rem);
+  opacity: 1;
+  background-color: rgba(240, 248, 255, 0.719);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @media (min-width: 768px) {
   header .containerBusqueda {
     width: 50%;
@@ -554,14 +635,14 @@ footer {
   main .gridLibros {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
     margin: 1rem auto;
     width: 80%;
-        grid-template-areas: "l1 l2 l3 l4" "l5 l6 l7 l7";
+        grid-template-areas: "l1 l2 l3" "l4 l5 l6" "l7 l8 l9";
   }
 }
 
