@@ -36,20 +36,41 @@
             font-size: 2.5rem;;            
         }
         .gridLibros{
-            display: grid; 
-            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-columns: 25vw 25vw 25vw; 
             grid-template-rows: 1fr 1fr 1fr; 
             gap: 1rem;
-            margin: 1rem auto;
+            margin: 2rem auto;
             width: 80%;
             grid-template-areas: 
             "l1 l2 l3"
             "l4 l5 l6"
             "l7 l8 l9"; 
         }
+        .precioLibroGrid{
+            width: 25vw;
+            font-size: 2.5vw;
+            
+        }
+
+        .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+        &:hover{
+            .precioLibroGrid{
+
+                transform: translateY(-145%);
+                opacity: 1;
+                background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+            }
+        }
     }
+        .nombreLibroGrid{
     
+            font-size: 2.5vw;
+            width: 25vw;
+        }
+    }
 }
+    
+
 //FOOTER 768PX 
 @media (min-width: 768px){
 
@@ -84,6 +105,23 @@
 
 //HEADER 1024PX
 @media (min-width: 1024px){}
+
+//MAIN 1024PX
+@media (min-width:1024px){
+
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+        &:hover{
+            .precioLibroGrid{
+
+                transform: translateY(-140%);
+                opacity: 1;
+                background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+            }
+        }
+    }
+}
+
+
 
 
 

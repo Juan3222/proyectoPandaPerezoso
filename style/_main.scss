@@ -123,7 +123,7 @@ h2{
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 2rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 75%;
     grid-template-areas: 
     "l1"
@@ -166,8 +166,8 @@ h2{
 }
 .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 
     figure{
         width: 100%;
@@ -175,15 +175,22 @@ h2{
     
 
     &:hover{
-        .precioHover{
-            transform: translateY(-9.5rem);
-            opacity: 1;
-            background: linear-gradient(0deg, rgba(255,255,255,0.9472163865546218) 45%, rgba(191,191,191,0.4598214285714286) 100%);
-        
-        }
         .gridLibrosImg{
             transform: translateY(-1rem);
                
+        }
+        .nombreLibroGrid{
+    
+            transform: translateY(-1rem);
+            opacity: 1;
+            background: linear-gradient(0deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+
+        }
+        .precioLibroGrid{
+
+            transform: translateY(-130%);
+            opacity: 1;
+            background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
         }
     }
 }
@@ -215,17 +222,29 @@ h2{
     font-size: 1.5rem;
     height: 60%;
 }
-.precioHoverDiv{
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-    width: 100%;
-}
 
-.precioHover{
+.nombreLibroGrid{
+    
+    display: flex;
     position: absolute;
-    font-size: 5rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
     transition: 0.3s;
     opacity: 0;
-    min-width: max-content;
+    width: 73.2vw;
+    z-index: 100;
+  
+}
+
+.precioLibroGrid{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    font-size: 5vw;
+    width: 73.2vw;
+    z-index: 100;
+    transition: 0.3s;
 }
