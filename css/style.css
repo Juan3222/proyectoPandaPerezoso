@@ -74,6 +74,11 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA {
   gap: 2rem;
 }
 
+header .containerHeaderLN .containerHeaderLH1 .containerCA img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 header .containerHeaderLN .containerHeaderLH1 .containerCA img {
   width: 6rem;
   -webkit-transition: 0.2s;
@@ -127,6 +132,12 @@ header .containerHeaderLN .containerHeader .barraNavegacion li {
   border-bottom: 2px solid black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+header .containerHeaderLN .containerHeader .barraNavegacion li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #6161611e;
 }
 
 header .containerBarra {
@@ -184,7 +195,7 @@ main {
           align-items: center;
 }
 
-.catalogo {
+main .catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,12 +204,45 @@ main {
           justify-content: center;
 }
 
-h2 {
+main .catalogo .catalogoTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0 1.5rem 0;
+  gap: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+main .catalogo .catalogoTitulo h2 {
   font-size: 3.3rem;
   font-weight: 500;
 }
 
-.catalogoInicio {
+main .catalogo .catalogoUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.5rem;
+  gap: 6rem;
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
+
+main .catalogo .catalogoUl ul {
+  list-style: none;
+}
+
+main .catalogoInicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,48 +262,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.catalogoInicio img {
-  width: 52rem;
-  height: 72rem;
-  border-radius: 10px;
-  -webkit-box-shadow: 7px 7px 2px #999999;
-          box-shadow: 7px 7px 2px #999999;
-}
-
-.catalogoUl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.5rem;
-  gap: 6rem;
-  list-style: none;
-  border-bottom: 1px solid gray;
-}
-
-.catalogoUl ul {
-  list-style: none;
-}
-
-.catalogoTitulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3rem 0 1.5rem 0;
-  gap: 1rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.catalogoInicioLibros {
+main .catalogoInicio .catalogoInicioLibros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,21 +275,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.catalogoLibros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 5rem 0;
-  width: 120rem;
-  height: 70rem;
-  background-color: rgba(255, 255, 255, 0.699);
-  border: 3px solid #4b4b4b;
-}
-
-.catalogoDescripcionLibros {
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 10px;
@@ -297,10 +286,10 @@ h2 {
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
-.recomendaciones {
+main .catalogoInicio .recomendaciones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +306,7 @@ h2 {
   border-bottom: 1px solid gray;
 }
 
-.recomendacionesDescripcion {
+main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 10px;
@@ -330,7 +319,7 @@ h2 {
   text-align: center;
 }
 
-.recomendacionesResumen {
+main .catalogoInicio .recomendaciones .recomendacionesResumen {
   font-size: 2rem;
   margin-top: 1rem;
   border: 2px solid gray;
@@ -340,121 +329,16 @@ h2 {
           box-shadow: 7px 7px 2px #999999;
 }
 
-.oferta {
+main .catalogoInicio img {
+  width: 52rem;
+  height: 72rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
+}
+
+main .oferta {
   font-weight: bold;
-}
-
-.gridLibros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-  margin: 2rem auto;
-  width: 75%;
-      grid-template-areas: "l1" "l2" "l3" "l4" "l5" "l6" "l7" "l8" "l9";
-}
-
-.l1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: l1;
-}
-
-.l2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: l2;
-}
-
-.l3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: l3;
-}
-
-.l4 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: l4;
-}
-
-.l5 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: l5;
-}
-
-.l6 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: l6;
-}
-
-.l7 {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: l7;
-}
-
-.l8 {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: l8;
-}
-
-.l9 {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: l9;
-}
-
-.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.l1 figure, .l2 figure, .l3 figure, .l4 figure, .l5 figure, .l6 figure, .l7 figure, .l8 figure, .l9 figure {
-  width: 100%;
-}
-
-.l1:hover .gridLibrosImg, .l2:hover .gridLibrosImg, .l3:hover .gridLibrosImg, .l4:hover .gridLibrosImg, .l5:hover .gridLibrosImg, .l6:hover .gridLibrosImg, .l7:hover .gridLibrosImg, .l8:hover .gridLibrosImg, .l9:hover .gridLibrosImg {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-}
-
-.l1:hover .nombreLibroGrid, .l2:hover .nombreLibroGrid, .l3:hover .nombreLibroGrid, .l4:hover .nombreLibroGrid, .l5:hover .nombreLibroGrid, .l6:hover .nombreLibroGrid, .l7:hover .nombreLibroGrid, .l8:hover .nombreLibroGrid, .l9:hover .nombreLibroGrid {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-  opacity: 1;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
-  background: linear-gradient(0deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
-}
-
-.l1:hover .precioLibroGrid, .l2:hover .precioLibroGrid, .l3:hover .precioLibroGrid, .l4:hover .precioLibroGrid, .l5:hover .precioLibroGrid, .l6:hover .precioLibroGrid, .l7:hover .precioLibroGrid, .l8:hover .precioLibroGrid, .l9:hover .precioLibroGrid {
-  -webkit-transform: translateY(-130%);
-          transform: translateY(-130%);
-  opacity: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
-  background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
-}
-
-.gridLibrosImg {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .comboGrid {
@@ -472,16 +356,100 @@ h2 {
   width: 48rem;
 }
 
-.comboGridTexto {
+.comboGrid .comboGridTexto {
   font-size: 3rem;
 }
 
-.comboOrdenar {
+.comboGrid .comboOrdenar {
   font-size: 1.5rem;
   height: 60%;
 }
 
-.nombreLibroGrid {
+.gridLibros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 75%;
+      grid-template-areas: "l1" "l2" "l3" "l4" "l5" "l6" "l7" "l8" "l9";
+}
+
+.gridLibros .l1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: l1;
+}
+
+.gridLibros .l2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: l2;
+}
+
+.gridLibros .l3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: l3;
+}
+
+.gridLibros .l4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: l4;
+}
+
+.gridLibros .l5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: l5;
+}
+
+.gridLibros .l6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: l6;
+}
+
+.gridLibros .l7 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: l7;
+}
+
+.gridLibros .l8 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: l8;
+}
+
+.gridLibros .l9 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: l9;
+}
+
+.gridLibros .l1, .gridLibros .l2, .gridLibros .l3, .gridLibros .l4, .gridLibros .l5, .gridLibros .l6, .gridLibros .l7, .gridLibros .l8, .gridLibros .l9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridLibros .l1 figure, .gridLibros .l2 figure, .gridLibros .l3 figure, .gridLibros .l4 figure, .gridLibros .l5 figure, .gridLibros .l6 figure, .gridLibros .l7 figure, .gridLibros .l8 figure, .gridLibros .l9 figure {
+  width: 100%;
+}
+
+.gridLibros .l1 .nombreLibroGrid, .gridLibros .l2 .nombreLibroGrid, .gridLibros .l3 .nombreLibroGrid, .gridLibros .l4 .nombreLibroGrid, .gridLibros .l5 .nombreLibroGrid, .gridLibros .l6 .nombreLibroGrid, .gridLibros .l7 .nombreLibroGrid, .gridLibros .l8 .nombreLibroGrid, .gridLibros .l9 .nombreLibroGrid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +466,7 @@ h2 {
   z-index: 100;
 }
 
-.precioLibroGrid {
+.gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,6 +480,83 @@ h2 {
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.gridLibros .l1 .gridLibrosImg, .gridLibros .l2 .gridLibrosImg, .gridLibros .l3 .gridLibrosImg, .gridLibros .l4 .gridLibrosImg, .gridLibros .l5 .gridLibrosImg, .gridLibros .l6 .gridLibrosImg, .gridLibros .l7 .gridLibrosImg, .gridLibros .l8 .gridLibrosImg, .gridLibros .l9 .gridLibrosImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gridLibros .l1:hover .gridLibrosImg, .gridLibros .l2:hover .gridLibrosImg, .gridLibros .l3:hover .gridLibrosImg, .gridLibros .l4:hover .gridLibrosImg, .gridLibros .l5:hover .gridLibrosImg, .gridLibros .l6:hover .gridLibrosImg, .gridLibros .l7:hover .gridLibrosImg, .gridLibros .l8:hover .gridLibrosImg, .gridLibros .l9:hover .gridLibrosImg {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.gridLibros .l1:hover .nombreLibroGrid, .gridLibros .l2:hover .nombreLibroGrid, .gridLibros .l3:hover .nombreLibroGrid, .gridLibros .l4:hover .nombreLibroGrid, .gridLibros .l5:hover .nombreLibroGrid, .gridLibros .l6:hover .nombreLibroGrid, .gridLibros .l7:hover .nombreLibroGrid, .gridLibros .l8:hover .nombreLibroGrid, .gridLibros .l9:hover .nombreLibroGrid {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
+  background: linear-gradient(0deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
+}
+
+.gridLibros .l1:hover .precioLibroGrid, .gridLibros .l2:hover .precioLibroGrid, .gridLibros .l3:hover .precioLibroGrid, .gridLibros .l4:hover .precioLibroGrid, .gridLibros .l5:hover .precioLibroGrid, .gridLibros .l6:hover .precioLibroGrid, .gridLibros .l7:hover .precioLibroGrid, .gridLibros .l8:hover .precioLibroGrid, .gridLibros .l9:hover .precioLibroGrid {
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
+  background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
+}
+
+.paginaLibros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  background-color: antiquewhite;
+  width: 48rem;
+  padding-bottom: 5px;
+}
+
+.paginaLibros p {
+  margin: 0;
+}
+
+.paginaLibros ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+}
+
+.paginaLibros ul li {
+  border-bottom: 1px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.paginaLibros ul li:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 footer {
@@ -537,26 +582,13 @@ footer {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  background-color: #ffe4c4;
+  background-color: #ffe4c4f3;
   padding: 1rem 0;
   border: 1px solid gray;
   gap: 1rem 0;
 }
 
-.pie .pieImg a {
-  margin: 0 5px;
-}
-
-.pieRedesImg:hover {
-  -webkit-animation: redesImg 0.4s 1;
-          animation: redesImg 0.4s 1;
-}
-
-.pie img {
-  width: 5rem;
-}
-
-.pieRedes {
+.pie .pieRedes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,7 +601,20 @@ footer {
           align-items: center;
 }
 
-.pieDescripcion {
+.pie .pieImg a {
+  margin: 0 5px;
+}
+
+.pie .pieRedesImg:hover {
+  -webkit-animation: redesImg 0.4s 1;
+          animation: redesImg 0.4s 1;
+}
+
+.pie img {
+  width: 5rem;
+}
+
+.pie .pieDescripcion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,7 +630,7 @@ footer {
   font-size: 1.5rem;
 }
 
-.pieUbicacion {
+.pie .pieUbicacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,12 +645,12 @@ footer {
   margin: 2.5rem 0;
 }
 
-.pieSubtitulo h3 {
-  font-size: 5rem;
+.pie .pieUbicacion img {
+  width: 3rem;
 }
 
-.pieUbicacion img {
-  width: 3rem;
+.pie .pieSubtitulo h3 {
+  font-size: 5rem;
 }
 
 @-webkit-keyframes redesImg {
@@ -630,17 +675,6 @@ footer {
             transform: scale(1.4) translateY(10px);
   }
   /* No sé cómo hacer que no se reinicie la animación, quiero mantener la transformación mientras mantenga el cursor arriba*/
-}
-
-.barraNavegacion li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  background-color: #6161611e;
-}
-
-.containerCA img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 
 @media (min-width: 768px) {
@@ -675,23 +709,23 @@ footer {
         grid-template-columns: 25vw 25vw 25vw;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 3rem;
     margin: 2rem auto;
     width: 80%;
         grid-template-areas: "l1 l2 l3" "l4 l5 l6" "l7 l8 l9";
   }
-  main .precioLibroGrid {
-    width: 25vw;
-    font-size: 2.5vw;
-  }
-  main .l1:hover .precioLibroGrid, main .l2:hover .precioLibroGrid, main .l3:hover .precioLibroGrid, main .l4:hover .precioLibroGrid, main .l5:hover .precioLibroGrid, main .l6:hover .precioLibroGrid, main .l7:hover .precioLibroGrid, main .l8:hover .precioLibroGrid, main .l9:hover .precioLibroGrid {
+  main .gridLibros .l1:hover .precioLibroGrid, main .gridLibros .l2:hover .precioLibroGrid, main .gridLibros .l3:hover .precioLibroGrid, main .gridLibros .l4:hover .precioLibroGrid, main .gridLibros .l5:hover .precioLibroGrid, main .gridLibros .l6:hover .precioLibroGrid, main .gridLibros .l7:hover .precioLibroGrid, main .gridLibros .l8:hover .precioLibroGrid, main .gridLibros .l9:hover .precioLibroGrid {
     -webkit-transform: translateY(-145%);
             transform: translateY(-145%);
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
     background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
   }
-  main .nombreLibroGrid {
+  main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
+    width: 25vw;
+    font-size: 2.5vw;
+  }
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
     font-size: 2.5vw;
     width: 25vw;
   }

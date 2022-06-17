@@ -3,8 +3,8 @@ header{
     flex-direction: column;
     justify-content: center;
     grid-area: header;
-    background-color: #ffe4c4f3;
-    border-bottom: 1px solid gray;
+    background-color: $colorBase;
+    border-bottom: $bordesSecciones;
     width: 100%;
 
     .containerHeaderLN{
@@ -23,7 +23,13 @@ header{
                 display: flex;
                 margin-left: 5rem;
                 gap: 2rem;
+
+                img:hover{
+                    transform: scale(1.5);
+                    
+                }
             }
+            
             .containerCA img{
                 width: 6rem;
                 transition: 0.2s;
@@ -57,6 +63,12 @@ header{
                 li{
                     border-bottom: 2px solid black;
                     transition: 0.2s;
+                }
+                li:hover {
+                    transform: scale(1.2);
+                    background-color: #6161611e;
+                    
+                
                 }
             }
         }

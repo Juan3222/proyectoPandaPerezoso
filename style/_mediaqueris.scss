@@ -38,35 +38,36 @@
         .gridLibros{
             grid-template-columns: 25vw 25vw 25vw; 
             grid-template-rows: 1fr 1fr 1fr; 
-            gap: 1rem;
+            gap: 3rem;
             margin: 2rem auto;
             width: 80%;
             grid-template-areas: 
             "l1 l2 l3"
             "l4 l5 l6"
             "l7 l8 l9"; 
-        }
-        .precioLibroGrid{
-            width: 25vw;
-            font-size: 2.5vw;
+
             
-        }
-
-        .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
-        &:hover{
-            .precioLibroGrid{
-
-                transform: translateY(-145%);
-                opacity: 1;
-                background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+                &:hover{
+                    .precioLibroGrid{
+        
+                        transform: translateY(-145%);
+                        opacity: 1;
+                        background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+                    }
+                }
+                .precioLibroGrid{
+                    width: 25vw;
+                    font-size: 2.5vw;
+                    
+                }
+                .nombreLibroGrid{
+        
+                    font-size: 2.5vw;
+                    width: 25vw;
+                }
             }
-        }
-    }
-        .nombreLibroGrid{
-    
-            font-size: 2.5vw;
-            width: 25vw;
-        }
+        }  
     }
 }
     
