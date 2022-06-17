@@ -289,6 +289,39 @@ main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
   font-size: 3rem;
 }
 
+main .catalogoInicio .catalogoInicioLibros .catalogoIC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .catalogoInicio .catalogoInicioLibros .catalogoIC .agregarCarrito {
+  position: absolute;
+}
+
+main .catalogoInicio .catalogoInicioLibros .catalogoIC .agregarCarrito .agregarCarritoImg {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 0px #999999;
+          box-shadow: 0px 0px 0px #999999;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .catalogoInicio .catalogoInicioLibros .catalogoIC:hover .agregarCarritoImg {
+  -webkit-transform: scale(2.5) translateY(-3rem);
+          transform: scale(2.5) translateY(-3rem);
+  background-color: rgba(250, 235, 215, 0.685);
+  opacity: 1;
+}
+
 main .catalogoInicio .recomendaciones {
   display: -webkit-box;
   display: -ms-flexbox;
