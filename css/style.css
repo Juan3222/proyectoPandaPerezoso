@@ -341,6 +341,10 @@ main .oferta {
   font-weight: bold;
 }
 
+main .relleno {
+  padding: 25vh;
+}
+
 .comboGrid {
   display: -webkit-box;
   display: -ms-flexbox;
