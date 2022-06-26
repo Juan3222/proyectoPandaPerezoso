@@ -21,6 +21,19 @@ body {
       grid-template-areas: "header" "main" "footer";
 }
 
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-radius: 10px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
+  text-align: center;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +99,7 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA img {
 }
 
 header .containerHeaderLN .containerHeaderLH1 h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
 }
@@ -123,7 +136,7 @@ header .containerHeaderLN .containerHeader .barraNavegacion {
           justify-content: center;
   gap: 2rem;
   list-style: none;
-  font-size: 2.5rem;
+  font-size: 3rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -156,7 +169,7 @@ header .containerBarra {
 header .containerBarra .barraBusqueda {
   width: 50%;
   height: 4rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 1rem;
 }
 
@@ -164,7 +177,7 @@ header .containerBarra .btn {
   height: 4rem;
   width: 9rem;
   margin-right: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 header a {
@@ -232,7 +245,8 @@ main .catalogo .catalogoUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
   gap: 6rem;
   list-style: none;
   border-bottom: 1px solid gray;
@@ -276,17 +290,8 @@ main .catalogoInicio .catalogoInicioLibros {
 }
 
 main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
-  border-radius: 10px;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 7px 7px 2px #999999;
-          box-shadow: 7px 7px 2px #999999;
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  font-weight: 400;
 }
 
 main .catalogoInicio .catalogoInicioLibros .catalogoIC {
@@ -319,6 +324,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoIC:hover .agregarCarritoImg 
   -webkit-transform: scale(2.5) translateY(-3rem);
           transform: scale(2.5) translateY(-3rem);
   background-color: rgba(250, 235, 215, 0.685);
+  border-radius: 50px;
   opacity: 1;
 }
 
@@ -334,26 +340,15 @@ main .catalogoInicio .recomendaciones {
   width: -moz-min-content;
   width: min-content;
   font-size: 2.5rem;
+  font-weight: 400;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid gray;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
-  border-radius: 10px;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 7px 7px 2px #999999;
-          box-shadow: 7px 7px 2px #999999;
-  text-align: center;
-}
-
 main .catalogoInicio .recomendaciones .recomendacionesResumen {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
   margin-top: 1rem;
   border: 2px solid gray;
   border-radius: 10px;
@@ -362,7 +357,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           box-shadow: 7px 7px 2px #999999;
 }
 
-main .catalogoInicio img {
+.catalogoInicio img {
   width: 52rem;
   height: 72rem;
   border-radius: 10px;
@@ -370,11 +365,12 @@ main .catalogoInicio img {
           box-shadow: 7px 7px 2px #999999;
 }
 
-main .oferta {
+.oferta {
+  font-size: 2.7rem;
   font-weight: bold;
 }
 
-main .relleno {
+.relleno {
   padding: 25vh;
 }
 

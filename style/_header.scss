@@ -35,7 +35,7 @@ header{
                 transition: 0.2s;
             }
             h1{
-                font-size: 5rem;
+                font-size: map-get($tamañosFuente, "extragrande");
                 font-weight: 900;
                 font-family: 'Poppins', sans-serif;
             }
@@ -57,7 +57,7 @@ header{
                 justify-content: center;
                 gap: 2rem;
                 list-style: none;
-                font-size: 2.5rem;
+                font-size: map-get($tamañosFuente, "grande");
                 flex-wrap: wrap;
 
                 li{
@@ -82,14 +82,14 @@ header{
         .barraBusqueda{
             width: 50%;
             height: 4rem;
-            font-size: 2rem;
+            font-size: map-get($tamañosFuente, "normal");
             margin-right: 1rem;
         }
         .btn{
             height: 4rem;
             width: 9rem;
             margin-right: 10px;
-            font-size: 2rem;
+            font-size: map-get($tamañosFuente, "normal");
         }
     }
     a{
