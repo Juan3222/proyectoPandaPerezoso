@@ -21,17 +21,30 @@ body {
       grid-template-areas: "header" "main" "footer";
 }
 
-main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 10px;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
   text-align: center;
+  width: 52rem;
+}
+
+.gridLibros .l1 .gridLibrosImg, .gridLibros .l2 .gridLibrosImg, .gridLibros .l3 .gridLibrosImg, .gridLibros .l4 .gridLibrosImg, .gridLibros .l5 .gridLibrosImg, .gridLibros .l6 .gridLibrosImg, .gridLibros .l7 .gridLibrosImg, .gridLibros .l8 .gridLibrosImg, .gridLibros .l9 .gridLibrosImg {
+  width: 52rem;
+  height: 72rem;
+}
+
+@media (min-width: 768px) {
+  .gridLibros .l1 .gridLibrosImg, .gridLibros .l2 .gridLibrosImg, .gridLibros .l3 .gridLibrosImg, .gridLibros .l4 .gridLibrosImg, .gridLibros .l5 .gridLibrosImg, .gridLibros .l6 .gridLibrosImg, .gridLibros .l7 .gridLibrosImg, .gridLibros .l8 .gridLibrosImg, .gridLibros .l9 .gridLibrosImg {
+    width: 36rem;
+    height: 56rem;
+  }
+  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
+    width: 36rem;
+  }
 }
 
 header {
@@ -169,7 +182,7 @@ header .containerBarra {
 header .containerBarra .barraBusqueda {
   width: 50%;
   height: 4rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-right: 1rem;
 }
 
@@ -177,7 +190,7 @@ header .containerBarra .btn {
   height: 4rem;
   width: 9rem;
   margin-right: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 header a {
@@ -386,7 +399,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           align-items: center;
   gap: 1rem;
   background-color: antiquewhite;
-  width: 48rem;
+  width: 52rem;
 }
 
 .comboGrid .comboGridTexto {
@@ -407,7 +420,6 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
   margin: 2rem auto;
-  width: 75%;
       grid-template-areas: "l1" "l2" "l3" "l4" "l5" "l6" "l7" "l8" "l9";
 }
 
@@ -478,25 +490,25 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           align-items: center;
 }
 
-.gridLibros .l1 figure, .gridLibros .l2 figure, .gridLibros .l3 figure, .gridLibros .l4 figure, .gridLibros .l5 figure, .gridLibros .l6 figure, .gridLibros .l7 figure, .gridLibros .l8 figure, .gridLibros .l9 figure {
-  width: 100%;
-}
-
 .gridLibros .l1 .nombreLibroGrid, .gridLibros .l2 .nombreLibroGrid, .gridLibros .l3 .nombreLibroGrid, .gridLibros .l4 .nombreLibroGrid, .gridLibros .l5 .nombreLibroGrid, .gridLibros .l6 .nombreLibroGrid, .gridLibros .l7 .nombreLibroGrid, .gridLibros .l8 .nombreLibroGrid, .gridLibros .l9 .nombreLibroGrid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 5vw;
+  opacity: 0;
+  font-size: 4rem;
+  font-weight: 500;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-radius: 5px;
+  width: 52rem;
+  z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
-  width: 73.2vw;
-  z-index: 100;
+  position: absolute;
 }
 
 .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
@@ -508,17 +520,18 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           justify-content: center;
   text-align: center;
   opacity: 0;
-  font-size: 5vw;
-  width: 73.2vw;
+  font-size: 4rem;
+  font-weight: 500;
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .gridLibros .l1 .gridLibrosImg, .gridLibros .l2 .gridLibrosImg, .gridLibros .l3 .gridLibrosImg, .gridLibros .l4 .gridLibrosImg, .gridLibros .l5 .gridLibrosImg, .gridLibros .l6 .gridLibrosImg, .gridLibros .l7 .gridLibrosImg, .gridLibros .l8 .gridLibrosImg, .gridLibros .l9 .gridLibrosImg {
-  width: 100%;
-  height: 100%;
   border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -537,8 +550,6 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
 }
 
 .gridLibros .l1:hover .precioLibroGrid, .gridLibros .l2:hover .precioLibroGrid, .gridLibros .l3:hover .precioLibroGrid, .gridLibros .l4:hover .precioLibroGrid, .gridLibros .l5:hover .precioLibroGrid, .gridLibros .l6:hover .precioLibroGrid, .gridLibros .l7:hover .precioLibroGrid, .gridLibros .l8:hover .precioLibroGrid, .gridLibros .l9:hover .precioLibroGrid {
-  -webkit-transform: translateY(-130%);
-          transform: translateY(-130%);
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
   background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
@@ -560,7 +571,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           align-items: center;
   font-size: 3rem;
   background-color: antiquewhite;
-  width: 48rem;
+  width: 52rem;
   padding-bottom: 5px;
 }
 
@@ -738,29 +749,32 @@ footer {
     font-size: 2.5rem;
   }
   main .gridLibros {
-    -ms-grid-columns: 25vw 25vw 25vw;
-        grid-template-columns: 25vw 25vw 25vw;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    gap: 3rem;
-    margin: 2rem auto;
-    width: 80%;
-        grid-template-areas: "l1 l2 l3" "l4 l5 l6" "l7 l8 l9";
+    -ms-grid-columns: 25vw 25vw;
+        grid-template-columns: 25vw 25vw;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 18rem;
+        grid-template-areas: "l1 l2" "l3 l4" "l5 l6" "l7 l8" "l9 ..";
+  }
+  main .gridLibros .l1, main .gridLibros .l2, main .gridLibros .l3, main .gridLibros .l4, main .gridLibros .l5, main .gridLibros .l6, main .gridLibros .l7, main .gridLibros .l8, main .gridLibros .l9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
+    width: 36rem;
   }
   main .gridLibros .l1:hover .precioLibroGrid, main .gridLibros .l2:hover .precioLibroGrid, main .gridLibros .l3:hover .precioLibroGrid, main .gridLibros .l4:hover .precioLibroGrid, main .gridLibros .l5:hover .precioLibroGrid, main .gridLibros .l6:hover .precioLibroGrid, main .gridLibros .l7:hover .precioLibroGrid, main .gridLibros .l8:hover .precioLibroGrid, main .gridLibros .l9:hover .precioLibroGrid {
-    -webkit-transform: translateY(-145%);
-            transform: translateY(-145%);
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
     background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
-  }
-  main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
-    width: 25vw;
-    font-size: 2.5vw;
-  }
-  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
-    font-size: 2.5vw;
-    width: 25vw;
   }
 }
 
@@ -795,13 +809,63 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  .l1:hover .precioLibroGrid, .l2:hover .precioLibroGrid, .l3:hover .precioLibroGrid, .l4:hover .precioLibroGrid, .l5:hover .precioLibroGrid, .l6:hover .precioLibroGrid, .l7:hover .precioLibroGrid, .l8:hover .precioLibroGrid, .l9:hover .precioLibroGrid {
-    -webkit-transform: translateY(-140%);
-            transform: translateY(-140%);
+@media (min-width: 1200px) {
+  main .catalogoInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .catalogoInicio img {
+    width: 36rem;
+    height: 56rem;
+  }
+  main .catalogoDescripcionLibros {
+    font-size: 2.5rem;
+  }
+  main .gridLibros {
+    -ms-grid-columns: 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 8rem;
+        grid-template-areas: "l1 l2 l3" "l4 l5 l6" "l7 l8 l9";
+  }
+  main .gridLibros .l1, main .gridLibros .l2, main .gridLibros .l3, main .gridLibros .l4, main .gridLibros .l5, main .gridLibros .l6, main .gridLibros .l7, main .gridLibros .l8, main .gridLibros .l9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
+    width: 36rem;
+  }
+  main .gridLibros .l1:hover .precioLibroGrid, main .gridLibros .l2:hover .precioLibroGrid, main .gridLibros .l3:hover .precioLibroGrid, main .gridLibros .l4:hover .precioLibroGrid, main .gridLibros .l5:hover .precioLibroGrid, main .gridLibros .l6:hover .precioLibroGrid, main .gridLibros .l7:hover .precioLibroGrid, main .gridLibros .l8:hover .precioLibroGrid, main .gridLibros .l9:hover .precioLibroGrid {
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
     background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
+  }
+}
+
+@media (min-width: 1600px) {
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
+    width: 42rem;
+  }
+  main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
+    width: 42rem;
+  }
+  main .gridLibros .l1 .gridLibrosImg, main .gridLibros .l2 .gridLibrosImg, main .gridLibros .l3 .gridLibrosImg, main .gridLibros .l4 .gridLibrosImg, main .gridLibros .l5 .gridLibrosImg, main .gridLibros .l6 .gridLibrosImg, main .gridLibros .l7 .gridLibrosImg, main .gridLibros .l8 .gridLibrosImg, main .gridLibros .l9 .gridLibrosImg {
+    width: 42rem;
+    height: 62rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

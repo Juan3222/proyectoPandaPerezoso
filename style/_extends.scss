@@ -3,9 +3,24 @@
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     border-radius: 10px;
-    min-width: max-content;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow:  7px 7px 2px #999999;
     text-align: center;
+    width: 52rem;
 
+}
+%tamañoImg{
+    width: 52rem;
+    height: 72rem;
+}
+
+@media (min-width: 768px){
+    %tamañoImg{
+        width: 36rem;
+        height: 56rem;
+    }
+    %descripcion{
+    
+        width: 36rem;
+    }
 }

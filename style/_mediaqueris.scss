@@ -36,43 +36,41 @@
             font-size: 2.5rem;;            
         }
         .gridLibros{
-            grid-template-columns: 25vw 25vw 25vw; 
-            grid-template-rows: 1fr 1fr 1fr; 
-            gap: 3rem;
-            margin: 2rem auto;
-            width: 80%;
+            grid-template-columns: 25vw 25vw; 
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            gap: 18rem;
             grid-template-areas: 
-            "l1 l2 l3"
-            "l4 l5 l6"
-            "l7 l8 l9"; 
+            "l1 l2"
+            "l3 l4"
+            "l5 l6"
+            "l7 l8"
+            "l9 .."; 
 
             
             .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                .nombreLibroGrid{
+                    width: 36rem;
+                }
+
                 &:hover{
                     .precioLibroGrid{
-        
-                        transform: translateY(-145%);
+
                         opacity: 1;
                         background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
                     }
                 }
-                .precioLibroGrid{
-                    width: 25vw;
-                    font-size: 2.5vw;
-                    
-                }
-                .nombreLibroGrid{
-        
-                    font-size: 2.5vw;
-                    width: 25vw;
-                }
+                
             }
         }  
     }
 }
     
 
-//FOOTER 768PX 
 @media (min-width: 768px){
 
     
@@ -104,23 +102,84 @@
     }
 }
 
-//HEADER 1024PX
-@media (min-width: 1024px){}
 
-//MAIN 1024PX
-@media (min-width:1024px){
-
-    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
-        &:hover{
-            .precioLibroGrid{
-
-                transform: translateY(-140%);
-                opacity: 1;
-                background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
-            }
+@media (min-width:1200px){
+    main{
+        .catalogoInicio{
+            display: flex;
+            flex-direction: row;
+            
         }
+
+        .catalogoInicio img{
+            width: 36rem;
+            height: 56rem;
+            
+        }
+        .catalogoDescripcionLibros{
+            
+            font-size: 2.5rem;;            
+        }
+        .gridLibros{
+            grid-template-columns: 25vw 25vw 25vw; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            gap: 8rem;
+            grid-template-areas: 
+            "l1 l2 l3"
+            "l4 l5 l6"
+            "l7 l8 l9";
+        
+
+            
+            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                .nombreLibroGrid{
+                    width: 36rem;
+                }
+                
+
+                &:hover{
+                    .precioLibroGrid{
+
+                        opacity: 1;
+                        background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
+                    }
+                }      
+            }
+        }    
+    }  
+}
+
+@media (min-width:1600px){
+
+    main{
+        
+        .gridLibros{
+           
+            
+            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+
+                .nombreLibroGrid{
+                    width: 42rem;
+                }
+                .precioLibroGrid{
+                    width: 42rem;
+                }
+                .gridLibrosImg{
+                    width: 42rem;
+                    height: 62rem;
+                }
+            }
+        }  
     }
 }
+
+        
+
 
 
 
