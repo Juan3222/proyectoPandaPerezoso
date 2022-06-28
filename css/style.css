@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Yanone+Kaffeesatz&display=swap");
 * {
   margin: 0;
@@ -63,7 +62,7 @@ header {
   grid-area: header;
   background-color: #ffe4c4f3;
   border-bottom: 1px solid gray;
-  width: 100%;
+  width: 100vw;
 }
 
 header .containerHeaderLN {
@@ -100,12 +99,12 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA {
   gap: 2rem;
 }
 
-header .containerHeaderLN .containerHeaderLH1 .containerCA img:hover {
+header .containerHeaderLN .containerHeaderLH1 .containerCA input:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-header .containerHeaderLN .containerHeaderLH1 .containerCA img {
+header .containerHeaderLN .containerHeaderLH1 .containerCA input {
   width: 6rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -156,14 +155,18 @@ header .containerHeaderLN .containerHeader .barraNavegacion {
 
 header .containerHeaderLN .containerHeader .barraNavegacion li {
   border-bottom: 2px solid black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .containerHeaderLN .containerHeader .barraNavegacion li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: #6161611e;
+}
+
+header .containerHeaderLN .containerHeader .barraNavegacion li:hover a {
+  color: #4646e6;
 }
 
 header .containerBarra {
@@ -258,11 +261,35 @@ main .catalogo .catalogoUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2.5rem;
-  font-weight: 500;
   gap: 6rem;
   list-style: none;
   border-bottom: 1px solid gray;
+}
+
+main .catalogo .catalogoUl h5 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+main .catalogo .catalogoUl a {
+  text-decoration: none;
+  color: black;
+}
+
+main .catalogo .catalogoUl li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.171);
+}
+
+main .catalogo .catalogoUl li:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 main .catalogo .catalogoUl ul {
@@ -302,7 +329,7 @@ main .catalogoInicio .catalogoInicioLibros {
   margin-bottom: 2rem;
 }
 
-main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
   font-size: 2.7rem;
   font-weight: 400;
 }
@@ -336,7 +363,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoIC .agregarCarrito .agregarC
 main .catalogoInicio .catalogoInicioLibros .catalogoIC:hover .agregarCarritoImg {
   -webkit-transform: scale(2.5) translateY(-3rem);
           transform: scale(2.5) translateY(-3rem);
-  background-color: rgba(250, 235, 215, 0.685);
+  background-color: rgba(250, 235, 215, 0.856);
   border-radius: 50px;
   opacity: 1;
 }
@@ -352,22 +379,28 @@ main .catalogoInicio .recomendaciones {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  font-size: 2.5rem;
-  font-weight: 400;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid gray;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesResumen {
-  font-size: 2.5rem;
+main .catalogoInicio .recomendaciones .recomendacionesDescripcion h5 {
+  font-size: 2.7rem;
   font-weight: 400;
+}
+
+main .catalogoInicio .recomendaciones .recomendacionesResumen {
   margin-top: 1rem;
   border: 2px solid gray;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
+}
+
+main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .catalogoInicio img {
@@ -378,7 +411,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           box-shadow: 7px 7px 2px #999999;
 }
 
-.oferta {
+.oferta h5 {
   font-size: 2.7rem;
   font-weight: bold;
 }
@@ -545,8 +578,8 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
   opacity: 1;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
-  background: linear-gradient(0deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 228, 196, 0.786152)), to(rgba(255, 228, 196, 0.929009)));
+  background: linear-gradient(0deg, rgba(255, 228, 196, 0.786152) 0%, rgba(255, 228, 196, 0.929009) 100%);
 }
 
 .gridLibros .l1:hover .precioLibroGrid, .gridLibros .l2:hover .precioLibroGrid, .gridLibros .l3:hover .precioLibroGrid, .gridLibros .l4:hover .precioLibroGrid, .gridLibros .l5:hover .precioLibroGrid, .gridLibros .l6:hover .precioLibroGrid, .gridLibros .l7:hover .precioLibroGrid, .gridLibros .l8:hover .precioLibroGrid, .gridLibros .l9:hover .precioLibroGrid {
@@ -603,6 +636,77 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
           transform: translateY(-0.5rem);
 }
 
+main .containerContacto {
+  background-color: antiquewhite;
+  padding: 2rem;
+}
+
+main .containerContacto .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
+  width: 80vw;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+main .containerContacto .contacto h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+main .containerContacto .contacto textarea {
+  resize: none;
+  width: 60vw;
+}
+
+main .containerContacto .contacto fieldset {
+  margin: 1rem 0;
+}
+
+main .containerContacto .contacto input {
+  width: 60vw;
+}
+
+main .containerContacto .contacto input:active {
+  color: #ffe4c4f3;
+}
+
+main .containerContacto .contacto button {
+  width: 20vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .containerContacto .contacto button:hover {
+  background-color: black;
+  color: white;
+}
+
+main .containerContacto .contacto .checkbox {
+  width: 2rem;
+}
+
+main .mapaContacto {
+  border: 5px solid antiquewhite;
+  width: 80vw;
+  height: 50rem;
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -630,6 +734,7 @@ footer {
   padding: 1rem 0;
   border: 1px solid gray;
   gap: 1rem 0;
+  width: 100vw;
 }
 
 .pie .pieRedes {
@@ -647,11 +752,13 @@ footer {
 
 .pie .pieImg a {
   margin: 0 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.pie .pieRedesImg:hover {
-  -webkit-animation: redesImg 0.4s 1;
-          animation: redesImg 0.4s 1;
+.pie .pieImg a:hover {
+  -webkit-transform: scale(1.4) translateY(10px);
+          transform: scale(1.4) translateY(10px);
 }
 
 .pie img {
@@ -695,40 +802,6 @@ footer {
 
 .pie .pieSubtitulo h3 {
   font-size: 5rem;
-}
-
-@-webkit-keyframes redesImg {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.4) translateY(10px);
-            transform: scale(1.4) translateY(10px);
-  }
-  /* No sé cómo hacer que no se reinicie la animación, quiero mantener la transformación mientras mantenga el cursor arriba*/
-}
-
-@keyframes redesImg {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.4) translateY(10px);
-            transform: scale(1.4) translateY(10px);
-  }
-  /* No sé cómo hacer que no se reinicie la animación, quiero mantener la transformación mientras mantenga el cursor arriba*/
-}
-
-@media (min-width: 768px) {
-  header .containerBusqueda {
-    width: 50%;
-  }
-  header .catalogoInicio img {
-    width: 42rem;
-    height: 62rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -776,9 +849,12 @@ footer {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
     background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
   }
-}
-
-@media (min-width: 768px) {
+  header .containerBusqueda {
+    width: 50%;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
   .pie {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -806,6 +882,35 @@ footer {
   }
   .pie .pieUbicacion img {
     width: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerContacto .contacto {
+    width: 55rem;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .containerContacto .contacto h3 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .containerContacto .contacto textarea {
+    width: 30rem;
+  }
+  .containerContacto .contacto input {
+    width: 60vw;
+  }
+  .containerContacto .contacto button {
+    width: 20vw;
+  }
+  .containerContacto .contacto .checkbox {
+    width: 2rem;
+  }
+  .mapaContacto {
+    border: 5px solid antiquewhite;
+    width: 80vw;
+    height: 50rem;
   }
 }
 
@@ -848,11 +953,6 @@ footer {
   }
   main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
     width: 36rem;
-  }
-  main .gridLibros .l1:hover .precioLibroGrid, main .gridLibros .l2:hover .precioLibroGrid, main .gridLibros .l3:hover .precioLibroGrid, main .gridLibros .l4:hover .precioLibroGrid, main .gridLibros .l5:hover .precioLibroGrid, main .gridLibros .l6:hover .precioLibroGrid, main .gridLibros .l7:hover .precioLibroGrid, main .gridLibros .l8:hover .precioLibroGrid, main .gridLibros .l9:hover .precioLibroGrid {
-    opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
-    background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
   }
 }
 

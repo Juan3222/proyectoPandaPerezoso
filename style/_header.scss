@@ -5,7 +5,7 @@ header{
     grid-area: header;
     background-color: $colorBase;
     border-bottom: $bordesSecciones;
-    width: 100%;
+    width: 100vw;
 
     .containerHeaderLN{
         display: flex;
@@ -24,13 +24,13 @@ header{
                 margin-left: 5rem;
                 gap: 2rem;
 
-                img:hover{
+                input:hover{
                     transform: scale(1.5);
                     
                 }
             }
             
-            .containerCA img{
+            .containerCA input{
                 width: 6rem;
                 transition: 0.2s;
             }
@@ -62,13 +62,14 @@ header{
 
                 li{
                     border-bottom: 2px solid black;
-                    transition: 0.2s;
+                    transition: 0.3s;
                 }
                 li:hover {
                     transform: scale(1.2);
                     background-color: #6161611e;
-                    
-                
+                    a{
+                        color:rgb(70, 70, 230)
+                    }
                 }
             }
         }
@@ -101,3 +102,4 @@ header{
     }
     
 }
+

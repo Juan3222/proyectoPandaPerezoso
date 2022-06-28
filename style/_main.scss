@@ -28,15 +28,37 @@ main{
         
         .catalogoUl{
             display: flex;
-            @include fontSizeWeight (2.5rem, 500); 
             gap: 6rem;
             list-style: none;
             border-bottom: 1px solid gray;
+            
+            h5{
+                @include fontSizeWeight (2.5rem, 500); 
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                
+                
+            }
+            li{
+                transition: 0.3s;
+                margin: 1rem 0;
+                border-radius: 5px;
+                border: 3px solid rgba(255, 255, 255, 0.171);
+                &:hover{
+                    transform: scale(1.4);
+                    border-top: 2px solid gray;
+                    border-bottom: 2px solid gray;
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+            }
+            ul{
+                list-style: none;
+            }
+            
         }
         
-        .catalogoUl ul{
-            list-style: none;
-        }
     }
 
     .catalogoInicio{
@@ -57,7 +79,9 @@ main{
 
             .catalogoDescripcionLibros{
                 @extend %descripcion;
-                @include fontSizeWeight (2.7rem, 400);            
+                h5{
+                    @include fontSizeWeight (2.7rem, 400); 
+                }           
             }
             .catalogoIC{
                 display: flex;
@@ -79,7 +103,7 @@ main{
                 &:hover{
                     .agregarCarritoImg{
                         transform: scale(2.5) translateY(-3rem);
-                        background-color: rgba(250, 235, 215, 0.685);
+                        background-color: rgba(250, 235, 215, 0.856);
                         border-radius: 50px;
                         opacity: 1;
                     }
@@ -90,16 +114,21 @@ main{
             display: flex;
             flex-direction: column;
             width: min-content;
-            @include fontSizeWeight (2.5rem, 400);  
             padding-bottom: 1rem;
             margin-bottom: 2rem;
             border-bottom: 1px solid gray;
 
             .recomendacionesDescripcion{
                 @extend %descripcion;
+                h5{
+                    @include fontSizeWeight (2.7rem, 400);  
+                }
             }
             .recomendacionesResumen{
-                @include fontSizeWeight (2.5rem, 400);      
+                  
+                h5{
+                    @include fontSizeWeight (2.5rem, 400);  
+                }    
                 margin-top: 1rem;
                 border: 2px solid gray;
                 border-radius: 10px;
@@ -118,7 +147,10 @@ main{
         
     }
     .oferta{
-        @include fontSizeWeight (2.7rem, bold);      
+        h5{
+            @include fontSizeWeight (2.7rem, bold); 
+        }
+             
     }
     .relleno{
         padding: 25vh;
