@@ -99,12 +99,12 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA {
   gap: 2rem;
 }
 
-header .containerHeaderLN .containerHeaderLH1 .containerCA input:hover {
+header .containerHeaderLN .containerHeaderLH1 .containerCA img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-header .containerHeaderLN .containerHeaderLH1 .containerCA input {
+header .containerHeaderLN .containerHeaderLH1 .containerCA img {
   width: 6rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -281,7 +281,7 @@ main .catalogo .catalogoUl li {
   transition: 0.3s;
   margin: 1rem 0;
   border-radius: 5px;
-  border: 3px solid rgba(255, 255, 255, 0.171);
+  border: 3px solid rgba(255, 255, 255, 0.801);
 }
 
 main .catalogo .catalogoUl li:hover {
@@ -289,7 +289,7 @@ main .catalogo .catalogoUl li:hover {
           transform: scale(1.4);
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffe4c4f3;
 }
 
 main .catalogo .catalogoUl ul {
@@ -327,6 +327,15 @@ main .catalogoInicio .catalogoInicioLibros {
   border-bottom: 1px solid gray;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+}
+
+main .catalogoInicio .catalogoInicioLibros:hover .catalogoDescripcionLibros {
+  background-color: #ffe4c4f3;
+}
+
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
@@ -384,12 +393,27 @@ main .catalogoInicio .recomendaciones {
   border-bottom: 1px solid gray;
 }
 
+main .catalogoInicio .recomendaciones:hover .recomendacionesDescripcion {
+  background-color: #ffe4c4f3;
+}
+
+main .catalogoInicio .recomendaciones:hover .recomendacionesResumen {
+  background-color: #ffe4c4f3;
+}
+
+main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 main .catalogoInicio .recomendaciones .recomendacionesDescripcion h5 {
   font-size: 2.7rem;
   font-weight: 400;
 }
 
 main .catalogoInicio .recomendaciones .recomendacionesResumen {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 1rem;
   border: 2px solid gray;
   border-radius: 10px;
@@ -401,6 +425,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
 main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
   font-size: 2.5rem;
   font-weight: 400;
+  padding: 0.5rem;
 }
 
 .catalogoInicio img {
@@ -702,7 +727,17 @@ main .containerContacto .contacto .checkbox {
 }
 
 main .mapaContacto {
-  border: 5px solid antiquewhite;
+  background-color: antiquewhite;
+  padding: 2rem;
+}
+
+main .mapaContacto iframe {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
   width: 80vw;
   height: 50rem;
 }
@@ -906,11 +941,6 @@ footer {
   }
   .containerContacto .contacto .checkbox {
     width: 2rem;
-  }
-  .mapaContacto {
-    border: 5px solid antiquewhite;
-    width: 80vw;
-    height: 50rem;
   }
 }
 

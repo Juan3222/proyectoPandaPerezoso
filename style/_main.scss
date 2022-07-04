@@ -45,12 +45,12 @@ main{
                 transition: 0.3s;
                 margin: 1rem 0;
                 border-radius: 5px;
-                border: 3px solid rgba(255, 255, 255, 0.171);
+                border: 3px solid rgba(255, 255, 255, 0.801);
                 &:hover{
                     transform: scale(1.4);
                     border-top: 2px solid gray;
                     border-bottom: 2px solid gray;
-                    background-color: rgba(255, 255, 255, 0.5);
+                    background-color: $colorBase;
                 }
             }
             ul{
@@ -76,12 +76,18 @@ main{
             border-bottom: 1px solid gray;
             padding-bottom: 1rem;
             margin-bottom: 2rem;
+            &:hover{
+                .catalogoDescripcionLibros{
+                    background-color: $colorBase;
+                }
+            }
 
             .catalogoDescripcionLibros{
+                transition: 0.3s;
                 @extend %descripcion;
                 h5{
                     @include fontSizeWeight (2.7rem, 400); 
-                }           
+                }        
             }
             .catalogoIC{
                 display: flex;
@@ -117,17 +123,28 @@ main{
             padding-bottom: 1rem;
             margin-bottom: 2rem;
             border-bottom: 1px solid gray;
+            &:hover{
+                .recomendacionesDescripcion{
+                    background-color: $colorBase;
+                }
+                .recomendacionesResumen{
+                    background-color: $colorBase;
+                }
+            }
 
             .recomendacionesDescripcion{
+                transition: 0.3s;
                 @extend %descripcion;
                 h5{
                     @include fontSizeWeight (2.7rem, 400);  
+                   
                 }
             }
             .recomendacionesResumen{
-                  
+                transition: 0.3s;  
                 h5{
-                    @include fontSizeWeight (2.5rem, 400);  
+                    @include fontSizeWeight (2.5rem, 400);
+                    padding: 0.5rem;  
                 }    
                 margin-top: 1rem;
                 border: 2px solid gray;
