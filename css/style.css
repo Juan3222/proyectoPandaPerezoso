@@ -28,12 +28,11 @@ main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .cat
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
   text-align: center;
-  width: 52rem;
 }
 
 .gridLibros .l1 .gridLibrosImg, .gridLibros .l2 .gridLibrosImg, .gridLibros .l3 .gridLibrosImg, .gridLibros .l4 .gridLibrosImg, .gridLibros .l5 .gridLibrosImg, .gridLibros .l6 .gridLibrosImg, .gridLibros .l7 .gridLibrosImg, .gridLibros .l8 .gridLibrosImg, .gridLibros .l9 .gridLibrosImg {
-  width: 52rem;
-  height: 72rem;
+  width: 80vw;
+  height: 60vh;
 }
 
 @media (min-width: 768px) {
@@ -111,7 +110,7 @@ header .containerHeaderLN .containerHeaderLH1 .containerCA img {
 }
 
 header .containerHeaderLN .containerHeaderLH1 h1 {
-  font-size: 5.5rem;
+  font-size: 10vw;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
 }
@@ -148,7 +147,7 @@ header .containerHeaderLN .containerHeader .barraNavegacion {
           justify-content: center;
   gap: 2rem;
   list-style: none;
-  font-size: 3rem;
+  font-size: 6vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -185,7 +184,7 @@ header .containerBarra {
 header .containerBarra .barraBusqueda {
   width: 50%;
   height: 4rem;
-  font-size: 2rem;
+  font-size: 3vw;
   margin-right: 1rem;
 }
 
@@ -193,7 +192,7 @@ header .containerBarra .btn {
   height: 4rem;
   width: 9rem;
   margin-right: 10px;
-  font-size: 2rem;
+  font-size: 3vw;
 }
 
 header a {
@@ -222,6 +221,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 main .catalogo {
@@ -253,7 +253,7 @@ main .catalogo .catalogoTitulo {
 }
 
 main .catalogo .catalogoTitulo h2 {
-  font-size: 3.3rem;
+  font-size: 5vw;
   font-weight: 500;
 }
 
@@ -267,7 +267,7 @@ main .catalogo .catalogoUl {
 }
 
 main .catalogo .catalogoUl h5 {
-  font-size: 2.5rem;
+  font-size: 5vw;
   font-weight: 500;
 }
 
@@ -336,10 +336,12 @@ main .catalogoInicio .catalogoInicioLibros:hover .catalogoDescripcionLibros {
 main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 80vw;
+  max-width: 500px;
 }
 
 main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
-  font-size: 2.7rem;
+  font-size: 5vw;
   font-weight: 400;
 }
 
@@ -404,10 +406,11 @@ main .catalogoInicio .recomendaciones:hover .recomendacionesResumen {
 main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-width: 500px;
 }
 
 main .catalogoInicio .recomendaciones .recomendacionesDescripcion h5 {
-  font-size: 2.7rem;
+  font-size: 5vw;
   font-weight: 400;
 }
 
@@ -420,17 +423,19 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
+  max-width: 500px;
 }
 
 main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
-  font-size: 2.5rem;
+  font-size: 5vw;
   font-weight: 400;
   padding: 0.5rem;
 }
 
 .catalogoInicio img {
-  width: 52rem;
-  height: 72rem;
+  width: 80vw;
+  height: 60vh;
+  max-width: 500px;
   border-radius: 10px;
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
@@ -457,15 +462,15 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
           align-items: center;
   gap: 1rem;
   background-color: antiquewhite;
-  width: 52rem;
+  width: 70vw;
 }
 
 .comboGrid .comboGridTexto {
-  font-size: 3rem;
+  font-size: 5vw;
 }
 
 .comboGrid .comboOrdenar {
-  font-size: 1.5rem;
+  font-size: 3vw;
   height: 60%;
 }
 
@@ -562,7 +567,8 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 5px;
-  width: 52rem;
+  width: 80vw;
+  max-width: 500px;
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -580,6 +586,8 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
   opacity: 0;
   font-size: 4rem;
   font-weight: 500;
+  width: 80vw;
+  max-width: 500px;
   z-index: 100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -592,6 +600,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
           box-shadow: 7px 7px 2px #999999;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-width: 500px;
 }
 
 .gridLibros .l1:hover .gridLibrosImg, .gridLibros .l2:hover .gridLibrosImg, .gridLibros .l3:hover .gridLibrosImg, .gridLibros .l4:hover .gridLibrosImg, .gridLibros .l5:hover .gridLibrosImg, .gridLibros .l6:hover .gridLibrosImg, .gridLibros .l7:hover .gridLibrosImg, .gridLibros .l8:hover .gridLibrosImg, .gridLibros .l9:hover .gridLibrosImg {
@@ -627,9 +636,9 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3rem;
+  font-size: 5vw;
   background-color: antiquewhite;
-  width: 52rem;
+  width: 70vw;
   padding-bottom: 5px;
 }
 
@@ -797,7 +806,7 @@ footer {
 }
 
 .pie img {
-  width: 5rem;
+  width: 10vw;
 }
 
 .pie .pieDescripcion {
@@ -811,9 +820,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30rem;
   height: 100%;
-  font-size: 1.5rem;
+  max-width: 90%;
+}
+
+.pie .pieDescripcion p {
+  text-align: center;
+  font-size: 3vw;
 }
 
 .pie .pieUbicacion {
@@ -827,16 +840,18 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 5vw;
   margin: 2.5rem 0;
 }
 
 .pie .pieUbicacion img {
-  width: 3rem;
+  width: 5vw;
 }
 
 .pie .pieSubtitulo h3 {
-  font-size: 5rem;
+  text-align: center;
+  font-size: 7vw;
 }
 
 @media (min-width: 768px) {

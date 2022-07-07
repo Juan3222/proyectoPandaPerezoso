@@ -6,6 +6,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     .catalogo{
         display: flex;
@@ -22,7 +23,7 @@ main{
             border-bottom: 5px solid black;
 
             h2{
-                @include fontSizeWeight (3.3rem, 500); 
+                @include fontSizeWeight (5vw, 500); 
             }
         }
         
@@ -33,7 +34,7 @@ main{
             border-bottom: 1px solid gray;
             
             h5{
-                @include fontSizeWeight (2.5rem, 500); 
+                @include fontSizeWeight (5vw, 500); 
             }
             a{
                 text-decoration: none;
@@ -84,9 +85,11 @@ main{
 
             .catalogoDescripcionLibros{
                 transition: 0.3s;
+                width: 80vw;
+                max-width: 500px;
                 @extend %descripcion;
                 h5{
-                    @include fontSizeWeight (2.7rem, 400); 
+                    @include fontSizeWeight (5vw, 400); 
                 }        
             }
             .catalogoIC{
@@ -135,15 +138,16 @@ main{
             .recomendacionesDescripcion{
                 transition: 0.3s;
                 @extend %descripcion;
+                max-width: 500px;
                 h5{
-                    @include fontSizeWeight (2.7rem, 400);  
+                    @include fontSizeWeight (5vw, 400);  
                    
                 }
             }
             .recomendacionesResumen{
                 transition: 0.3s;  
                 h5{
-                    @include fontSizeWeight (2.5rem, 400);
+                    @include fontSizeWeight (5vw, 400);
                     padding: 0.5rem;  
                 }    
                 margin-top: 1rem;
@@ -151,14 +155,16 @@ main{
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.5);
                 box-shadow:  7px 7px 2px #999999;
+                max-width: 500px;
             } 
         }
     }
         
     }
     .catalogoInicio img{
-        width: 52rem;
-        height: 72rem;
+        width: 80vw;
+        height: 60vh;
+        max-width: 500px;
         border-radius: 10px;
         box-shadow:  7px 7px 2px #999999;
         
