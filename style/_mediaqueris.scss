@@ -1,92 +1,148 @@
 
 @media (min-width: 768px){
+    header{
+        
+        .containerHeaderLN{
+            
+            .containerHeaderLH1{
+                
+                h1{
+                    font-size: 6rem;
+                }
+   
+            }
+            .containerHeader{
+                
     
-    main{
-        .catalogoInicio{
-            display: flex;
-            flex-direction: row;
-            
+                .barraNavegacion{
+                    font-size: 3.5rem;
+                    gap: 2.5rem;
+                }    
+            }   
         }
-
-        .catalogoInicio img{
-            width: 36rem;
-            height: 56rem;
+        .containerBarra{
             
-        }
-        .catalogoDescripcionLibros{
+    
+            .barraBusqueda{
             
-            font-size: 2.5rem;         
-        }
-        .gridLibros{
-            grid-template-columns: 25vw 25vw; 
-            grid-template-rows: 1fr 1fr 1fr 1fr; 
-            gap: 18rem;
-            grid-template-areas: 
-            "l1 l2"
-            "l3 l4"
-            "l5 l6"
-            "l7 l8"
-            "l9 .."; 
-
-            
-            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-
-                .nombreLibroGrid{
-                    width: 36rem;
-                }
-
-                &:hover{
-                    .precioLibroGrid{
-
-                        opacity: 1;
-                        background: linear-gradient(180deg, rgba(255,228,196,0.6474964985994398) 0%, rgba(255,228,196,0.8743872549019608) 100%);
-                    }
-                }
+                font-size: 2rem;
                 
             }
-        }  
+            .btn{
+                
+                font-size: 2rem;
+            } 
+        }      
     }
-    header{
-        .containerBusqueda{
-            width: 50%;
-        }
+    main{
         
-        h1{
-            font-size: 5rem;
+    
+        .catalogo{
+            
+    
+            .catalogoTitulo {
+                
+                h2{
+                    @include fontSizeWeight (4rem, 500);  
+                }
+            }
+            
+            .catalogoUl{
+                flex-direction: row;
+                gap: 3rem;
+                h5{
+                    @include fontSizeWeight (4rem, 500); 
+                }
+                li{
+                    width: 32rem;
+                }
+            }
+            
         }
     
+        .catalogoInicio{
+            img{
+                width: 36rem;
+                height: 56rem;
+            }
+            flex-direction: row;
+    
+            .catalogoInicioLibros{
+                
+                
+    
+                .catalogoDescripcionLibros{
+
+                    width: 36rem;
+                    h5{
+                       font-size: 3rem; 
+                    }        
+                }
+                  
+            }
+        }    
+        .catalogoInicioRecomendaciones{
+
+          
+            .recomendaciones{
+                img{
+                    width: 40rem
+                }
+                
+    
+                .recomendacionesDescripcion{
+                    width: 40rem;
+                    h5{
+                        @include fontSizeWeight (3rem, 500);  
+                       
+                    }
+                }
+                .recomendacionesResumen{
+                    width: 40rem;
+                    h5{
+                        @include fontSizeWeight (2.5rem, 400);
+                    }    
+                    
+                } 
+            }
+        }
     }
     .pie{
         flex-direction: row;
-        
-        
-
-        .pieSubtitulo h3{
-            font-size: 3rem;
-        }
-        .pieImg{
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        .pieImg img{
+    
+        .pieRedes{
             
-            width: 3rem;
+        }
+        
+        img{
+            width: 4rem;
+            
+        }
+        .pieDescripcion{
+            width: 35rem;
+            p{
+                text-align: center;
+                font-size: 2rem;
+            }
+            
         }
         .pieUbicacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            font-size: 2rem;
+            margin: 2.5rem 0;
+            img{
+                width: 2rem;
+            }
         }
-        .pieUbicacion a{
-            font-size: 1.5rem;
-        }
-        .pieUbicacion img{
-            width: 1.8rem;
+        .pieSubtitulo h3{
+            text-align: center;
+            font-size: 4rem;
         }
     }
-}
+}    
 @media (min-width:1024px){
     .containerContacto{
         
@@ -186,12 +242,3 @@
         }  
     }
 }
-
-        
-
-
-
-
-
-
-

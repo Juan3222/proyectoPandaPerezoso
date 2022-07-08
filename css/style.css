@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-y: overlay;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
       grid-template-areas: "header" "main" "footer";
 }
 
-main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 10px;
@@ -40,7 +41,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .cat
     width: 36rem;
     height: 56rem;
   }
-  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicio .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
+  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
     width: 36rem;
   }
 }
@@ -261,7 +262,10 @@ main .catalogo .catalogoUl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 6rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
   border-bottom: 1px solid gray;
 }
@@ -280,13 +284,16 @@ main .catalogo .catalogoUl li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 1rem 0;
+  padding: 2rem;
+  width: 75vw;
   border-radius: 5px;
   border: 3px solid rgba(255, 255, 255, 0.801);
+  text-align: center;
 }
 
 main .catalogo .catalogoUl li:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   background-color: #ffe4c4f3;
@@ -379,7 +386,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoIC:hover .agregarCarritoImg 
   opacity: 1;
 }
 
-main .catalogoInicio .recomendaciones {
+main .catalogoInicioRecomendaciones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,34 +394,58 @@ main .catalogoInicio .recomendaciones {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+main .catalogoInicioRecomendaciones img {
+  width: 80vw;
+  height: 60vh;
+  max-width: 500px;
+}
+
+main .catalogoInicioRecomendaciones .recomendaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid gray;
 }
 
-main .catalogoInicio .recomendaciones:hover .recomendacionesDescripcion {
+main .catalogoInicioRecomendaciones .recomendaciones:hover .recomendacionesDescripcion {
   background-color: #ffe4c4f3;
 }
 
-main .catalogoInicio .recomendaciones:hover .recomendacionesResumen {
+main .catalogoInicioRecomendaciones .recomendaciones:hover .recomendacionesResumen {
   background-color: #ffe4c4f3;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesDescripcion {
+main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 80vw;
   max-width: 500px;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesDescripcion h5 {
+main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion h5 {
   font-size: 5vw;
   font-weight: 400;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesResumen {
+main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesResumen {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-top: 1rem;
@@ -423,16 +454,17 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
+  width: 80vw;
   max-width: 500px;
 }
 
-main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
+main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesResumen h5 {
   font-size: 5vw;
   font-weight: 400;
   padding: 0.5rem;
 }
 
-.catalogoInicio img {
+main .catalogoInicio img {
   width: 80vw;
   height: 60vh;
   max-width: 500px;
@@ -441,12 +473,7 @@ main .catalogoInicio .recomendaciones .recomendacionesResumen h5 {
           box-shadow: 7px 7px 2px #999999;
 }
 
-.oferta h5 {
-  font-size: 2.7rem;
-  font-weight: bold;
-}
-
-.relleno {
+main .relleno {
   padding: 25vh;
 }
 
@@ -694,6 +721,7 @@ main .containerContacto .contacto {
   -webkit-box-shadow: 7px 7px 2px #999999;
           box-shadow: 7px 7px 2px #999999;
   width: 80vw;
+  max-width: 750px;
   font-size: 2rem;
   font-weight: 200;
 }
@@ -706,6 +734,7 @@ main .containerContacto .contacto h3 {
 main .containerContacto .contacto textarea {
   resize: none;
   width: 60vw;
+  max-width: 700px;
 }
 
 main .containerContacto .contacto fieldset {
@@ -714,6 +743,7 @@ main .containerContacto .contacto fieldset {
 
 main .containerContacto .contacto input {
   width: 60vw;
+  max-width: 700px;
 }
 
 main .containerContacto .contacto input:active {
@@ -724,6 +754,7 @@ main .containerContacto .contacto button {
   width: 20vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-width: 700px;
 }
 
 main .containerContacto .contacto button:hover {
@@ -794,13 +825,13 @@ footer {
           align-items: center;
 }
 
-.pie .pieImg a {
+.pie .pieImg img {
   margin: 0 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.pie .pieImg a:hover {
+.pie .pieImg img:hover {
   -webkit-transform: scale(1.4) translateY(10px);
           transform: scale(1.4) translateY(10px);
 }
@@ -855,10 +886,38 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header .containerHeaderLN .containerHeaderLH1 h1 {
+    font-size: 6rem;
+  }
+  header .containerHeaderLN .containerHeader .barraNavegacion {
+    font-size: 3.5rem;
+    gap: 2.5rem;
+  }
+  header .containerBarra .barraBusqueda {
+    font-size: 2rem;
+  }
+  header .containerBarra .btn {
+    font-size: 2rem;
+  }
+  main .catalogo .catalogoTitulo h2 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  main .catalogo .catalogoUl {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+  }
+  main .catalogo .catalogoUl h5 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  main .catalogo .catalogoUl li {
+    width: 32rem;
+  }
   main .catalogoInicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -868,18 +927,46 @@ footer {
     width: 36rem;
     height: 56rem;
   }
-  main .catalogoDescripcionLibros {
+  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
+    width: 36rem;
+  }
+  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
+    font-size: 3rem;
+  }
+  main .catalogoInicioRecomendaciones .recomendaciones img {
+    width: 40rem;
+  }
+  main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion {
+    width: 40rem;
+  }
+  main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion h5 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesResumen {
+    width: 40rem;
+  }
+  main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesResumen h5 {
     font-size: 2.5rem;
+    font-weight: 400;
   }
-  main .gridLibros {
-    -ms-grid-columns: 25vw 25vw;
-        grid-template-columns: 25vw 25vw;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 18rem;
-        grid-template-areas: "l1 l2" "l3 l4" "l5 l6" "l7 l8" "l9 ..";
+  .pie {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  main .gridLibros .l1, main .gridLibros .l2, main .gridLibros .l3, main .gridLibros .l4, main .gridLibros .l5, main .gridLibros .l6, main .gridLibros .l7, main .gridLibros .l8, main .gridLibros .l9 {
+  .pie img {
+    width: 4rem;
+  }
+  .pie .pieDescripcion {
+    width: 35rem;
+  }
+  .pie .pieDescripcion p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .pie .pieUbicacion {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -890,48 +977,16 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
-    width: 36rem;
-  }
-  main .gridLibros .l1:hover .precioLibroGrid, main .gridLibros .l2:hover .precioLibroGrid, main .gridLibros .l3:hover .precioLibroGrid, main .gridLibros .l4:hover .precioLibroGrid, main .gridLibros .l5:hover .precioLibroGrid, main .gridLibros .l6:hover .precioLibroGrid, main .gridLibros .l7:hover .precioLibroGrid, main .gridLibros .l8:hover .precioLibroGrid, main .gridLibros .l9:hover .precioLibroGrid {
-    opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 228, 196, 0.647496)), to(rgba(255, 228, 196, 0.874387)));
-    background: linear-gradient(180deg, rgba(255, 228, 196, 0.647496) 0%, rgba(255, 228, 196, 0.874387) 100%);
-  }
-  header .containerBusqueda {
-    width: 50%;
-  }
-  header h1 {
-    font-size: 5rem;
-  }
-  .pie {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .pie .pieSubtitulo h3 {
-    font-size: 3rem;
-  }
-  .pie .pieImg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .pie .pieImg img {
-    width: 3rem;
-  }
-  .pie .pieUbicacion {
     text-align: center;
-  }
-  .pie .pieUbicacion a {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 2.5rem 0;
   }
   .pie .pieUbicacion img {
-    width: 1.8rem;
+    width: 2rem;
+  }
+  .pie .pieSubtitulo h3 {
+    text-align: center;
+    font-size: 4rem;
   }
 }
 

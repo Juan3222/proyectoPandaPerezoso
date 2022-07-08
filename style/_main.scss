@@ -29,7 +29,7 @@ main{
         
         .catalogoUl{
             display: flex;
-            gap: 6rem;
+            flex-direction: column;
             list-style: none;
             border-bottom: 1px solid gray;
             
@@ -45,10 +45,13 @@ main{
             li{
                 transition: 0.3s;
                 margin: 1rem 0;
+                padding: 2rem;
+                width: 75vw;
                 border-radius: 5px;
                 border: 3px solid rgba(255, 255, 255, 0.801);
+                text-align: center;
                 &:hover{
-                    transform: scale(1.4);
+                    transform: scale(1.2);
                     border-top: 2px solid gray;
                     border-bottom: 2px solid gray;
                     background-color: $colorBase;
@@ -119,10 +122,23 @@ main{
                 }
             }   
         }
+    }
+    .catalogoInicioRecomendaciones{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0 2rem;
+        margin-bottom: 1rem;
+        img{
+            width: 80vw;
+            height: 60vh;
+            max-width: 500px;
+        }
         .recomendaciones{
             display: flex;
             flex-direction: column;
-            width: min-content;
             padding-bottom: 1rem;
             margin-bottom: 2rem;
             border-bottom: 1px solid gray;
@@ -138,6 +154,7 @@ main{
             .recomendacionesDescripcion{
                 transition: 0.3s;
                 @extend %descripcion;
+                width: 80vw;
                 max-width: 500px;
                 h5{
                     @include fontSizeWeight (5vw, 400);  
@@ -155,12 +172,12 @@ main{
                 border-radius: 10px;
                 background-color: rgba(255, 255, 255, 0.5);
                 box-shadow:  7px 7px 2px #999999;
+                width: 80vw;
                 max-width: 500px;
             } 
-        }
-    }
-        
-    }
+        }        
+    }    
+     
     .catalogoInicio img{
         width: 80vw;
         height: 60vh;
@@ -169,15 +186,11 @@ main{
         box-shadow:  7px 7px 2px #999999;
         
     }
-    .oferta{
-        h5{
-            @include fontSizeWeight (2.7rem, bold); 
-        }
-             
-    }
     .relleno{
         padding: 25vh;
     }
+}
+
 
 
 
