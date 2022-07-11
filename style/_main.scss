@@ -83,6 +83,7 @@ main{
             &:hover{
                 .catalogoDescripcionLibros{
                     background-color: $colorBase;
+                    
                 }
             }
 
@@ -92,7 +93,7 @@ main{
                 max-width: 500px;
                 @extend %descripcion;
                 h5{
-                    @include fontSizeWeight (5vw, 400); 
+                    @include fontSizeWeight (5vw, 500); 
                 }        
             }
             .catalogoIC{
@@ -131,9 +132,9 @@ main{
         justify-content: center;
         gap: 0 2rem;
         margin-bottom: 1rem;
+        
         img{
             width: 80vw;
-            height: 60vh;
             max-width: 500px;
         }
         .recomendaciones{

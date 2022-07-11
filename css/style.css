@@ -21,7 +21,7 @@ body {
       grid-template-areas: "header" "main" "footer";
 }
 
-main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
+main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid, main .novedades .novedadesContenedorTexto {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   border-radius: 10px;
@@ -41,7 +41,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .cat
     width: 36rem;
     height: 56rem;
   }
-  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid {
+  main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros, main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesDescripcion, .gridLibros .l1 .precioLibroGrid, .gridLibros .l2 .precioLibroGrid, .gridLibros .l3 .precioLibroGrid, .gridLibros .l4 .precioLibroGrid, .gridLibros .l5 .precioLibroGrid, .gridLibros .l6 .precioLibroGrid, .gridLibros .l7 .precioLibroGrid, .gridLibros .l8 .precioLibroGrid, .gridLibros .l9 .precioLibroGrid, main .novedades .novedadesContenedorTexto {
     width: 36rem;
   }
 }
@@ -349,7 +349,7 @@ main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros {
 
 main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
   font-size: 5vw;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 main .catalogoInicio .catalogoInicioLibros .catalogoIC {
@@ -408,7 +408,6 @@ main .catalogoInicioRecomendaciones {
 
 main .catalogoInicioRecomendaciones img {
   width: 80vw;
-  height: 60vh;
   max-width: 500px;
 }
 
@@ -782,6 +781,66 @@ main .mapaContacto iframe {
   height: 50rem;
 }
 
+main .novedades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #999999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .novedades:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+main .novedades .novedadesImg {
+  -webkit-box-shadow: 7px 7px 2px #999999;
+          box-shadow: 7px 7px 2px #999999;
+  border-radius: 5px;
+}
+
+main .novedades .novedadesImg img {
+  width: 80vw;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+main .novedades .novedadesContenedorTexto {
+  width: 80vw;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+main .novedades .novedadesContenedorTexto h3 {
+  font-size: 4.5vw;
+  font-weight: 600;
+}
+
+main .novedades .novedadesContenedorTexto h4 {
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+main .novedades .novedadesContenedorTexto button {
+  font-size: 1.5em;
+}
+
+main .novedades .novedadesContenedorTexto .novedadesTexto {
+  font-size: 1.5em;
+  padding-top: 0.5rem;
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -931,7 +990,7 @@ footer {
     width: 36rem;
   }
   main .catalogoInicio .catalogoInicioLibros .catalogoDescripcionLibros h5 {
-    font-size: 3rem;
+    font-size: 2.5em;
   }
   main .catalogoInicioRecomendaciones .recomendaciones img {
     width: 40rem;
@@ -949,6 +1008,12 @@ footer {
   main .catalogoInicioRecomendaciones .recomendaciones .recomendacionesResumen h5 {
     font-size: 2.5rem;
     font-weight: 400;
+  }
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
+    width: 36rem;
+  }
+  main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
+    width: 36rem;
   }
   .pie {
     -webkit-box-orient: horizontal;
@@ -991,26 +1056,71 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .containerContacto .contacto {
-    width: 55rem;
-    font-size: 2rem;
-    font-weight: 200;
+  main .catalogoInicioRecomendaciones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .containerContacto .contacto h3 {
-    font-size: 4rem;
-    font-weight: 500;
+  main .gridLibros {
+    -ms-grid-columns: 25vw 25vw;
+        grid-template-columns: 25vw 25vw;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16rem;
+        grid-template-areas: "l1 l2" "l3 l4" "l5 l6" "l7 l8" "l9 ..";
   }
-  .containerContacto .contacto textarea {
+  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
+    width: 36rem;
+  }
+  main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
+    width: 36rem;
+  }
+  main .novedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  main .novedades .novedadesImg {
+    margin-right: 2rem;
+  }
+  main .novedades .novedadesImg img {
     width: 30rem;
+    height: 45rem;
   }
-  .containerContacto .contacto input {
-    width: 60vw;
+  main .novedades .novedadesContenedorTexto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 65vw;
+    height: 45rem;
+    max-width: 1175px;
   }
-  .containerContacto .contacto button {
-    width: 20vw;
+  main .novedades .novedadesContenedorTexto h3 {
+    font-size: 3em;
+    font-weight: 600;
   }
-  .containerContacto .contacto .checkbox {
-    width: 2rem;
+  main .novedades .novedadesContenedorTexto h4 {
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  main .novedades .novedadesContenedorTexto .novedadesTexto {
+    margin-top: 3rem;
   }
 }
 
@@ -1027,9 +1137,6 @@ footer {
   main .catalogoInicio img {
     width: 36rem;
     height: 56rem;
-  }
-  main .catalogoDescripcionLibros {
-    font-size: 2.5rem;
   }
   main .gridLibros {
     -ms-grid-columns: 25vw 25vw 25vw;
@@ -1051,8 +1158,13 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
-    width: 36rem;
+  main .novedades:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  main .novedades .novedadesContenedorTexto .novedadesTexto {
+    font-size: 1.6em;
+    margin-top: 5rem;
   }
 }
 
@@ -1066,6 +1178,32 @@ footer {
   main .gridLibros .l1 .gridLibrosImg, main .gridLibros .l2 .gridLibrosImg, main .gridLibros .l3 .gridLibrosImg, main .gridLibros .l4 .gridLibrosImg, main .gridLibros .l5 .gridLibrosImg, main .gridLibros .l6 .gridLibrosImg, main .gridLibros .l7 .gridLibrosImg, main .gridLibros .l8 .gridLibrosImg, main .gridLibros .l9 .gridLibrosImg {
     width: 42rem;
     height: 62rem;
+  }
+  main .novedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 1rem 2rem 1rem;
+  }
+  main .novedades .novedadesImg {
+    margin-right: 2rem;
+  }
+  main .novedades .novedadesImg img {
+    width: 30rem;
+    height: 45rem;
+  }
+  main .novedades .novedadesContenedorTexto .novedadesTexto {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  main .novedades .novedadesContenedorTexto .btn {
+    font-size: 2em;
+    width: 20rem;
+    height: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,8 +74,9 @@
                 .catalogoDescripcionLibros{
 
                     width: 36rem;
+                    
                     h5{
-                       font-size: 3rem; 
+                       font-size: 2.5em; 
                     }        
                 }
                   
@@ -106,13 +107,25 @@
                 } 
             }
         }
+        .gridLibros{
+            
+    
+            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+                
+                .nombreLibroGrid{
+                    width: 36rem;
+                }   
+                .precioLibroGrid{
+                    width: 36rem;
+                }             
+            }
+        }
+    
     }
+      
     .pie{
         flex-direction: row;
     
-        .pieRedes{
-            
-        }
         
         img{
             width: 4rem;
@@ -142,32 +155,74 @@
             font-size: 4rem;
         }
     }
+    
 }    
 @media (min-width:1024px){
-    .containerContacto{
-        
-        .contacto{
+    main{
             
-            width: 55rem;
-            @include fontSizeWeight (2rem, 200); 
-            h3{
-                @include fontSizeWeight (4rem, 500); 
-            }
-            textarea{
-                width: 30rem;
-            }
+        .catalogoInicioRecomendaciones{
+            flex-direction: row;
+          
             
-            input{
-                width: 60vw;
-               
+        }
+        .gridLibros{
+            grid-template-columns: 25vw 25vw; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+            gap: 16rem;
+            grid-template-areas: 
+            "l1 l2"
+            "l3 l4"
+            "l5 l6"
+            "l7 l8"
+            "l9 ..";
+    
+            .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9{
+                
+                .nombreLibroGrid{
+                    width: 36rem;
+                }   
+                .precioLibroGrid{
+                    width: 36rem;
+                }             
             }
-            button{
-                width: 20vw;
+        }
+        .novedades{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 1rem 2rem 1rem;
+             
+            .novedadesImg{
+                margin-right: 2rem;
+                img{
+                    width: 30rem;
+                    height: 45rem;
+                    
+                }
             }
-            .checkbox{
-                width: 2rem;
+            .novedadesContenedorTexto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 65vw;
+                height: 45rem;
+                max-width: 1175px;
+    
+                h3{
+                    @include fontSizeWeight(3em, 600); 
+                    
+                }
+                h4{
+                    @include fontSizeWeight(2.5em, 400);  
+                
+                }
+                
+                
+                .novedadesTexto{
+                    margin-top: 3rem;
+                }
+                
             }
-           
             
         }
     }
@@ -187,10 +242,7 @@
             height: 56rem;
             
         }
-        .catalogoDescripcionLibros{
-            
-            font-size: 2.5rem;;            
-        }
+        
         .gridLibros{
             grid-template-columns: 25vw 25vw 25vw; 
             grid-template-rows: 1fr 1fr 1fr; 
@@ -208,10 +260,20 @@
                 align-items: center;
 
 
-                .nombreLibroGrid{
-                    width: 36rem;
-                }                
+                            
             }
+        }
+        .novedades{
+            &:hover{
+                transform: scale(1.05);
+            }
+            .novedadesContenedorTexto{
+                
+                .novedadesTexto{
+                    font-size: 1.6em;
+                    margin-top: 5rem;
+                } 
+            }  
         }    
     }  
 }
@@ -239,6 +301,35 @@
                     height: 62rem;
                 }
             }
+        }
+        .novedades{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 1rem 2rem 1rem;
+             
+            .novedadesImg{
+                margin-right: 2rem;
+                img{
+                    width: 30rem;
+                    height: 45rem;
+                    
+                }
+            }
+            .novedadesContenedorTexto{
+                
+               
+                
+                .novedadesTexto{
+                    margin-top: 0;
+                    font-size: 2em;
+                }
+                .btn{
+                    font-size: 2em;
+                    width: 20rem;
+                    height: 5rem;
+                }
+            }
+            
         }  
     }
 }
