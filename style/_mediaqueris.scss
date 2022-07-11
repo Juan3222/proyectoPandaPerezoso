@@ -107,6 +107,19 @@
                 } 
             }
         }
+        .comboGrid{
+            
+            width: 62rem;
+            height: 10rem;
+        
+            .comboGridTexto{
+                font-size: 3em;
+            }
+            .comboOrdenar{
+                font-size: 3em;
+                
+            }
+        }
         .gridLibros{
             
     
@@ -119,6 +132,12 @@
                     width: 36rem;
                 }             
             }
+        }
+        .paginaLibros{
+            
+            width: 62rem;
+            height: 10rem;
+            font-size: 3em;
         }
     
     }

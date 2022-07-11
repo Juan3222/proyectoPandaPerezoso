@@ -60,6 +60,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  background-image: url(../img/crumpled-white-paperboard.png);
   background-color: #ffe4c4f3;
   border-bottom: 1px solid gray;
   width: 100vw;
@@ -845,6 +846,7 @@ footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
+  background-image: url(../img/crumpled-white-paperboard.png);
 }
 
 .pie {
@@ -1009,11 +1011,26 @@ footer {
     font-size: 2.5rem;
     font-weight: 400;
   }
+  main .comboGrid {
+    width: 62rem;
+    height: 10rem;
+  }
+  main .comboGrid .comboGridTexto {
+    font-size: 3em;
+  }
+  main .comboGrid .comboOrdenar {
+    font-size: 3em;
+  }
   main .gridLibros .l1 .nombreLibroGrid, main .gridLibros .l2 .nombreLibroGrid, main .gridLibros .l3 .nombreLibroGrid, main .gridLibros .l4 .nombreLibroGrid, main .gridLibros .l5 .nombreLibroGrid, main .gridLibros .l6 .nombreLibroGrid, main .gridLibros .l7 .nombreLibroGrid, main .gridLibros .l8 .nombreLibroGrid, main .gridLibros .l9 .nombreLibroGrid {
     width: 36rem;
   }
   main .gridLibros .l1 .precioLibroGrid, main .gridLibros .l2 .precioLibroGrid, main .gridLibros .l3 .precioLibroGrid, main .gridLibros .l4 .precioLibroGrid, main .gridLibros .l5 .precioLibroGrid, main .gridLibros .l6 .precioLibroGrid, main .gridLibros .l7 .precioLibroGrid, main .gridLibros .l8 .precioLibroGrid, main .gridLibros .l9 .precioLibroGrid {
     width: 36rem;
+  }
+  main .paginaLibros {
+    width: 62rem;
+    height: 10rem;
+    font-size: 3em;
   }
   .pie {
     -webkit-box-orient: horizontal;
